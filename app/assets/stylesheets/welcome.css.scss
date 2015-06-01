@@ -1,11 +1,12 @@
 #background {
-  background-image: image-url("homepage_background.jpg");
+  background-image: image-url("farmers-market.jpg");
   height: 100vh; /*viewport height */
   background-size: cover;
   background-position: center;
   text-align: center;
   header {
-    padding: 3rem 0; //relative measurement
+    color: $white;
+    padding: 3rem 0; 
     #logo {
       float: left;
       text-transform: uppercase;
@@ -21,6 +22,7 @@
         li {
           display: inline;
           margin-left: 2.5rem;
+          position: relative;
           a {
             color: $white;
             text-decoration: none;
@@ -38,5 +40,7 @@
   }
   .button {
     margin: 1.5rem 2.5% 0 2.5%;
+    display: inline-block;
+    min-width: 130px;
   }
 }
