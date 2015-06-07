@@ -1,0 +1,27 @@
+<div id="background">
+  <header class="cf">
+    <div class="wrapper_wide">
+      <%= link_to "Market Finder", root_path, id: "logo" %>
+        <nav>
+          <ul>
+            <% unless user_signed_in? %>
+              <li><%= link_to "Explore", welcome_customer_landing_path %></li>
+              <li><%= link_to "Merchant Sign In", new_user_session_path %></li>
+              <li><%= link_to "About", welcome_about_path %></li>
+            <% else %>
+              <li><%= link_to "Explore", welcome_customer_landing_path %></li>
+              <li><%= link_to "About", welcome_about_path %></li>
+              <li><%= link_to "Sign Out", destroy_user_session_path%></li>
+            <% end %>
+          </ul>
+        </nav>
+    </div>
+  </header>
+  <div class="wrapper_skinny">
+    <h1>About Market Finder</h1>
+    <p>Have you ever gone to a farmer's market and absolutely fallen in love with a merchant's product?</p>
+    <p>Candy gummi bears icing toffee ice cream lollipop. Sweet soufflé jujubes. Biscuit dragée gingerbread soufflé danish pie topping oat cake. Halvah tootsie roll jelly beans biscuit gingerbread oat cake. Donut muffin toffee jelly bear claw fruitcake cake cheesecake. Soufflé croissant donut jujubes pie muffin candy.</p>
+    <p>Candy candy tart. Pudding bonbon marzipan sugar plum gummies jelly-o bonbon lollipop. Soufflé chocolate fruitcake cupcake dragée bear claw cheesecake. Marzipan jelly beans marshmallow tootsie roll cupcake sesame snaps soufflé topping. Sweet roll caramels gummies candy tiramisu jelly sesame snaps. Marzipan macaroon jelly-o oat cake dragée candy canes croissant gummies muffin. Chupa chups jelly beans pudding bear claw donut sesame snaps tiramisu lemon drops.</p>
+    <p>Oat cake gummies muffin dragée candy canes sesame snaps lemon drops gummi bears donut. Carrot cake soufflé soufflé gummi bears. Chocolate bar chocolate gummi bears chocolate cake candy canes cake chupa chups cheesecake. Sesame snaps jelly cupcake fruitcake carrot cake liquorice dessert. Marzipan marshmallow candy sugar plum. Sweet danish cookie muffin halvah. Lollipop jelly fruitcake. Cookie jelly beans chocolate marzipan muffin jelly beans topping. Cheesecake halvah jelly-o gummi bears croissant chocolate bar cookie jujubes caramels. Muffin donut danish cake croissant ice cream chupa chups biscuit.</p>
+  </div>  
+</div>

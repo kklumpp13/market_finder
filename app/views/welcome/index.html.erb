@@ -1,7 +1,7 @@
 <div id="background">
   <header class="cf">
     <div class="wrapper_wide">
-      <a href="#" id="logo">Market Finder</a>
+     <%= link_to "Market Finder", root_path, id: "logo" %>
         <nav>
           <ul>
             <% unless user_signed_in? %>
@@ -10,6 +10,7 @@
               <li><%= link_to "About", welcome_about_path %></li>
             <% else %>
               <li><%= link_to "Explore", welcome_customer_landing_path %></li>
+              <li><%= link_to "About", welcome_about_path %></li>
               <li><%= link_to "Sign Out", destroy_user_session_path%></li>
             <% end %>
           </ul>
