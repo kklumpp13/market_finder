@@ -4,9 +4,14 @@
       <a href="#" id="logo">Market Finder</a>
         <nav>
           <ul>
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">Merchant Sign In</a></li>
-            <li><a href="#">About</a></li>
+            <% unless user_signed_in? %>
+              <li><a href="#">Explore</a></li>
+              <li><a href="#">Merchant Sign In</a></li>
+              <li><a href="#">About</a></li>
+            <% else %>
+            <%# add link to explore here %>
+              <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+            <% end %>
           </ul>
         </nav>
     </div>
