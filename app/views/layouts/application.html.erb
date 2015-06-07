@@ -8,8 +8,17 @@
 </head>
 <body>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+<%# Hide the whitespace device notices automatically create at top %>
+<% if alert %>
+  <p class="alert">
+    <%= alert %>
+  </p>
+<% elsif notice %>
+  <p class="notice">
+    <%= notice %>
+  </p>
+<% end %>
+
 
 <%= yield %>
 
