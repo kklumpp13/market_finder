@@ -1,5 +1,5 @@
-<div id="background">
-  <header class="cf">
+<div class="vendor-background">
+  <header class="cf"> 
     <div class="wrapper_wide">
       <%= link_to "Market Finder", root_path, id: "logo" %>
         <nav>
@@ -20,7 +20,9 @@
   <div class="wrapper_skinny">
     <h1>Spread the word about your brand</h1>
     <p>Help your customers find you. Sign up so you can update your profile to share your story and to update the calendar to customers can find you.</p>
+    <% unless user_signed_in? %>
     <a href="#" class="button button_highlight">Sign Up</a>
+    <% end %>
     <a href="" class="button button_white">Existing Users</a>
   </div>  
 </div>

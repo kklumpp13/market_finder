@@ -20,8 +20,9 @@ Rails.application.routes.draw do
  # WelcomeController.action_methods.each do |action|
  #    get "/#{action}", to: "pages##{action}", as: "#{action}_page"
  #  end
-
+unauthenticated :user do
   root 'welcome#index'
+end
 
 
 

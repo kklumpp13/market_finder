@@ -1,5 +1,6 @@
-#background {
-  background-image: image-url("beans-background.jpg");
+.vendor-background {
+  color: blue;
+  background-image: image-url("gb-background.jpg");
   height: 100vh; /*viewport height */
   background-size: cover;
   background-position: center;
