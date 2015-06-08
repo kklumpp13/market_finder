@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :vendors
   get 'welcome/about'
 
   get 'welcome/vendor_landing'
