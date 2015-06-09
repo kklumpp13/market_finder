@@ -21,6 +21,10 @@
   </p>
 <% end %>
 
+<%# For the header in the devise views %>
+<% unless current_page?(root_path) %>
+  <%= render 'layouts/header' %>
+<% end %>
 
 
 <%= yield %>

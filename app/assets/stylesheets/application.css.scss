@@ -1,6 +1,7 @@
 $white: #FFFFFF;
 $highlight: #DA5A36;
 $dark: #22292e;
+$light: #EDEFF5;
 
 .wrapper_wide {
   width: 90%;
@@ -17,7 +18,7 @@ margin: 0 auto;
   margin: 0 auto;
 }
 
-//cf hack
+
 .cf:before, cf:after {
   content: " ";
   display: table;
@@ -56,9 +57,100 @@ margin: 0 auto;
   }
 }
 
+.button_block {
+  display: block;
+  margin: 0 auto;
+}
+
+#main_header {
+  color: $dark;
+  background: $white;
+  padding: 2.5rem 0;
+  #logo {
+    float: left;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $dark;
+    text-decoration: none;
+  }
+  nav {
+    float: right;
+    ul {
+      list-style: none;
+      margin: 0;
+      li {
+        display: inline;
+        margin-left: 2.5rem;
+        a {
+          color: $dark;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+#banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 4rem;
+  h1 {
+    text-align: center;
+    color: $white;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 8rem 0;
+  }
+}
+
+.vendors_banner {
+  background-image: image-url("nuts.jpg");
+}
+
+.sign_in_banner {
+  background-image: image-url("mixed-veggies.jpg");
+}
+
+.sign_up_banner {
+  background-image: image-url("pastries.jpg");
+}
+
+.about_banner {
+  background-image: image-url("cupcakes.jpg");
+}
+
+.field {
+  margin: .5rem 0 1.5rem 0;
+}
+
+input[type="email"], input[type="text"], input[type="password"], textarea {
+  width: 100%;
+  height: 2.5rem;
+  padding: .25rem 1rem;
+  background: $light;
+  border: 1px solid darken($light, 5%);
+  border-radius: .35rem;
+  margin-top: .5rem;
+}
+
+textarea {
+  min-height: 8rem;
+  margin-top: .5rem !important;
+}
+
+#form {
+  padding: 0 0 5rem 0;
+}
+
+
+
 @import 'normalize';
 @import 'welcome';
 @import 'vendor_landing';
 @import 'customer_landing';
+@import 'about'
 
 
