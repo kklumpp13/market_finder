@@ -4,7 +4,12 @@ class VendorsController < ApplicationController
   # GET /vendors
   # GET /vendors.json
   def index
-    @vendors = Vendor.all
+    if params[:product].blank?
+      @vendors = Vendor.all.order("created_at DESC")
+    else
+      @product_id = Product.find_by(name:params[:product]).id
+      @vendors = Vendor.where(product_id: @product_id).order("created_at DESC")
+    end
   end
 
   # GET /vendors/1
@@ -69,6 +74,6 @@ class VendorsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def vendor_params
-      params.require(:vendor).permit(:name, :description, :email, :website, :facebook, :phone, :twitter, :instagram)
+      params.require(:vendor).permit(:name, :description, :email, :website, :facebook, :phone, :twitter, :instagram, :product_id)
     end
 end
