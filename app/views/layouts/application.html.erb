@@ -21,10 +21,13 @@
   </p>
 <% end %>
 
-<%# For the header in the devise views %>
-<% unless current_page?(root_path) %>
-  <%= render 'layouts/header' %>
-<% end %>
+
+  <%= render :partial => 'layouts/header' unless controller_name == "welcome" && (action_name == "index" || "vendor_landing" || "customer_landing") %>
+
+
+<%#= if @user.signed_in? render "layout/header"  %>
+
+
 
 
 <%= yield %>

@@ -2,6 +2,7 @@ $white: #FFFFFF;
 $highlight: #DA5A36;
 $dark: #22292e;
 $light: #EDEFF5;
+$devise: #DC2031;
 
 .wrapper_wide {
   width: 90%;
@@ -45,6 +46,14 @@ margin: 0 auto;
   transition: background .4s ease-in-out;
   &:hover {
     background: darken($highlight, 7.5%); //SASS  figures out out hue 
+  }
+}
+
+.button_devise {
+  background: $devise;
+  transition: background .4s ease-in-out;
+  &:hover {
+    background: darken($devise, 7.5%); //SASS  figures out out hue 
   }
 }
 
@@ -145,7 +154,11 @@ textarea {
   padding: 0 0 5rem 0;
 }
 
-
+/* Devise */
+.devise-links {
+  text-decoration: none;
+  color: $devise;
+}
 
 @import 'normalize';
 @import 'welcome';

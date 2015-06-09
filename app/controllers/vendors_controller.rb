@@ -1,6 +1,6 @@
 class VendorsController < ApplicationController
   before_action :set_vendor, only: [:show, :edit, :update, :destroy]
-
+  # layout "header"
   # GET /vendors
   # GET /vendors.json
   def index
