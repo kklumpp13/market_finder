@@ -5,3 +5,19 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require_relative('farm_addy.rb')
+
+data = $data.compact.map do |mkt|
+  zip = mkt[:address][-5..-1]
+  street = mkt[:address].split(/,|;/).first
+
+  {
+    name: mkt[:name],
+    zip: zip,
+    address: street
+  }
+end
+
+pp data
+
+p Market.create(data)
