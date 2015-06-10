@@ -3,6 +3,7 @@ $highlight: #DA5A36;
 $dark: #22292e;
 $light: #EDEFF5;
 $devise: #DC2031;
+$merchant: #C13213;
 
 .wrapper_wide {
   width: 90%;
@@ -17,6 +18,7 @@ margin: 0 auto;
 .wrapper_skinny {
   width: 60%;
   margin: 0 auto;
+  padding-top: 6.5rem;
 }
 
 
@@ -54,6 +56,14 @@ margin: 0 auto;
   transition: background .4s ease-in-out;
   &:hover {
     background: darken($devise, 7.5%); //SASS  figures out out hue 
+  }
+}
+
+.button_merchant {
+  background: $merchant;
+  transition: background .4s ease-in-out;
+  &:hover {
+    background: darken($merchant, 7.5%); //SASS  figures out out hue 
   }
 }
 
