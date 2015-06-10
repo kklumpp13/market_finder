@@ -4,6 +4,17 @@ $dark: #22292e;
 $light: #EDEFF5;
 $devise: #DC2031;
 $merchant: #C13213;
+$cherry: #950B42;
+
+body {
+ font-family: 'Raleway', sans-serif;
+ /*font-family: 'Lato', sans-serif;
+*/}
+
+h1, h2 {
+  font-family: 'Lato', sans-serif;
+
+}
 
 .wrapper_wide {
   width: 90%;
@@ -56,6 +67,14 @@ margin: 0 auto;
   transition: background .4s ease-in-out;
   &:hover {
     background: darken($devise, 7.5%); //SASS  figures out out hue 
+  }
+}
+
+.button_cherry {
+  background: $cherry;
+  transition: background .4s ease-in-out;
+  &:hover {
+    background: darken($cherry, 7.5%); //SASS  figures out out hue 
   }
 }
 
