@@ -1,44 +1,39 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @vendor.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @vendor.description %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @vendor.email %>
-</p>
-
-<p>
-  <strong>Website:</strong>
-  <%= @vendor.website %>
-</p>
-
-<p>
-  <strong>Facebook:</strong>
-  <%= @vendor.facebook %>
-</p>
-
-<p>
-  <strong>Phone:</strong>
-  <%= @vendor.phone %>
-</p>
-
-<p>
-  <strong>Twitter:</strong>
-  <%= @vendor.twitter %>
-</p>
-
-<p>
-  <strong>Instagram:</strong>
-  <%= @vendor.instagram %>
-</p>
-
-<%= link_to 'Edit', edit_vendor_path(@vendor) %> |
+<div class="vendor_show">
+  <div class="vendor_banner">
+    <div class="wrapper_skinny">
+      <h1><%= @vendor.name %></h1>
+      <p class="description"><%= @vendor.description %></p>
+      <% unless @vendor.email.blank? %>
+        <a href="<%= @vendor.email %>" class="contact_link">Email</a>
+      <% end %>
+      <% unless @vendor.phone.blank? %>
+        <a href="<%= @vendor.phone %>" class="contact_link">Phone</a>
+      <% end %>
+      <% unless @vendor.website.blank? %>
+        <a href="<%= @vendor.website %>" class="contact_link">Website</a>
+      <% end %>
+      <% unless @vendor.facebook.blank? %>
+        <a href="<%= @vendor.facebook %>" class="contact_link">Facebook</a>
+      <% end %>
+      <% unless @vendor.twitter.blank? %>
+        <a href="<%= @vendor.twitter %>" class="contact_link">Twitter</a>
+      <% end %>
+      <% unless @vendor.instagram.blank? %>
+        <a href="<%= @vendor.instagram %>" class="contact_link">Instagram</a>
+      <% end %><br>
+      <%= link_to 'Edit', edit_vendor_path(@vendor) %> |
 <%= link_to 'Back', vendors_path %>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
