@@ -21,6 +21,11 @@
       <% unless @vendor.instagram.blank? %>
         <a href="<%= @vendor.instagram %>" class="contact_link">Instagram</a>
       <% end %><br>
+      <% unless @vendor.thumbnail.blank? %>
+        <%= image_tag @vendor.thumbnail.url(:medium) %>
+      <% end %><br>
+
+
       <%= link_to 'Edit', edit_vendor_path(@vendor) %> |
 <%= link_to 'Back', vendors_path %>
     </div>
