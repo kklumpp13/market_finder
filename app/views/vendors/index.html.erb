@@ -19,42 +19,23 @@
   </div>
 </div>
 
-<div class="vendor_listing"></div>
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Email</th>
-      <th>Website</th>
-      <th>Facebook</th>
-      <th>Phone</th>
-      <th>Twitter</th>
-      <th>Instagram</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div id="vendors" class="cf">
+   <div class="wrapper">
+    <ul>
+      <% @vendors.each do |vendor| %>
+        <%= link_to vendor do %>
+          <li>
+          <img src="images/something.jpg" alt="Cookie Lady">
+          <div class="vendor_overview">
+            <h2><%= vendor.name %></h2>
+          </div>
+        </li>
+        <% end %>
+      <% end %>
+    </ul>
+   </div>
+ </div>
 
- 
-  <tbody>
-    <% @vendors.each do |vendor| %>
-      <tr>
-        <td><%= vendor.name %></td>
-        <td><%= vendor.description %></td>
-        <td><%= vendor.email %></td>
-        <td><%= vendor.website %></td>
-        <td><%= vendor.facebook %></td>
-        <td><%= vendor.phone %></td>
-        <td><%= vendor.twitter %></td>
-        <td><%= vendor.instagram %></td>
-        <td><%= link_to 'Show', vendor %></td>
-        <td><%= link_to 'Edit', edit_vendor_path(vendor) %></td>
-        <td><%= link_to 'Destroy', vendor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<br>
 
 <%= link_to 'New Vendor', new_vendor_path %>
