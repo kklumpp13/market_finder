@@ -22,9 +22,7 @@
     <p>Help your customers find you. Sign up so you can update your profile to share your story and to update the calendar to customers can find you.</p>
     <% unless user_signed_in? %>
     <%= link_to "Sign Up", new_user_registration_path, class:"button button_merchant" %>
- <!--    <%= link_to "Existing Users", new_user_registration_path, class:"button button_highlight" %> -->
-    
-    <a href="" class="button button_white">Existing Users</a>
+    <%= link_to "Existing Users", new_user_session_path, class:"button button_white" %>
     <% end %>
   </div>  
 </div>
