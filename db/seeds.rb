@@ -8,8 +8,10 @@
 require_relative('farm_addy.rb')
 
 data = $data.compact.map do |mkt|
-  zip = mkt[:address][-5..-1]
-  street = mkt[:address].split(/,|;/).first
+  if mkt[:address]
+    zip = mkt[:address][-5..-1]
+    street = mkt[:address].split(/,|;/).first
+  end
 
   {
     name: mkt[:name],

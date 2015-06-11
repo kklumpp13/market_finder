@@ -1,5 +1,5 @@
 class Market < ActiveRecord::Base
-	  validates_format_of \
+  validates_format_of \
     :zip,
     with: /\A\d{5}-\d{4}|\A\d{5}\z/,
     message: 'should be 12345 or 12345-1234',
@@ -20,8 +20,10 @@ class Market < ActiveRecord::Base
     p(self, zip)
 
     city_data = ZipCodes.identify(zip)
-    city = city_data[:city]
-    state = city_data[:state_code]
+    if city_data
+      city = city_data[:city]
+      state = city_data[:state_code]
+    end
 
     fsa = [address, city, state, zip].join(', ')
     p fsa; return fsa

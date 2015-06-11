@@ -4,12 +4,13 @@ Rails.application.routes.draw do
   resources :vendors
   get 'welcome/about'
 
-  get 'welcome/vendor_landing' 
+  get 'welcome/vendor_landing'
 
   get 'welcome/customer_landing'
 
+  get 'markets/search/:zip/:radius' => 'markets#search'
+  get 'markets/search/:zip' => 'markets#search'
 
-  
 
   # get "/:page" => "welcome#vendor_landing"
   # get "/:page" => "welcome#customer_landing"

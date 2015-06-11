@@ -21,6 +21,13 @@ class MarketsController < ApplicationController
   def edit
   end
 
+  # GET /markets/search/90210
+  def search
+    radius = params[:radius] || 20
+    @markets = Market.near(params[:zip], radius)
+    render :index
+  end
+
   # POST /markets
   # POST /markets.json
   def create
