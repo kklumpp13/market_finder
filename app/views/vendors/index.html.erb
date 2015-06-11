@@ -8,14 +8,16 @@
 
 <div class="vendor_category">
   <div class="vendor_heading">
-    <li>
-      <%= link_to "All", vendors_path %>
-    </li>
-    <% Product.all.each do |product| %>
-    <li>
-      <%= link_to product.name, vendors_path(product: product.name) %>
-    </li>
-    <% end %>
+    <ul>
+      <li>
+        <%= link_to "All", vendors_path %>
+      </li>
+      <% Product.all.each do |product| %>
+      <li>
+        <%= link_to product.name, vendors_path(product: product.name) %>
+      </li>
+      <% end %>
+    </ul>
   </div>
 </div>
 
