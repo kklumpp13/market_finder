@@ -27,6 +27,7 @@ gem 'devise'
 
 gem 'geocoder'
 gem 'zip-codes'
+gem "paperclip", "~> 4.2"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
