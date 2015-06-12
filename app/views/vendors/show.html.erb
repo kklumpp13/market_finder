@@ -2,7 +2,7 @@
   <div class="vendor_banner">
     <div class="wrapper_skinny">
       <h1><%= @vendor.name %></h1>
-      <p class="description"><%= @vendor.description %></p>
+      <p class="description"><%= simple_format(@vendor.description) %></p>
       <% unless @vendor.email.blank? %>
         <a href="<%= @vendor.email %>" class="contact_link">Email</a>
       <% end %>
