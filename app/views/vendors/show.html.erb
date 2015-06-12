@@ -1,8 +1,12 @@
 <div class="vendor_show">
   <div class="vendor_banner">
-    <div class="wrapper_skinny">
+    <div class="wrapper_skinny vendor_show">
+
+    <section>
+      <div class="vendor_info">
       <h1><%= @vendor.name %></h1>
       <p class="description"><%= simple_format(@vendor.description) %></p>
+      <h2>Contact Us!</h2>
       <% unless @vendor.email.blank? %>
         <a href="<%= @vendor.email %>" class="contact_link">Email</a>
       <% end %>
@@ -21,14 +25,19 @@
       <% unless @vendor.instagram.blank? %>
         <a href="<%= @vendor.instagram %>" class="contact_link">Instagram</a>
       <% end %><br>
+      </div>
+
+      <div class="profile_pic">
       <% unless @vendor.thumbnail.blank? %>
         <%= image_tag @vendor.thumbnail.url(:medium) %>
       <% end %><br>
-
-
+      </div>
+  
+</section>
       <%= link_to 'Edit', edit_vendor_path(@vendor) %> |
 <%= link_to 'Back', vendors_path %>
     </div>
+    
   </div>
 
 </div>

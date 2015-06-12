@@ -75,3 +75,37 @@ text-align: center;
     }
 
 }
+
+/* Vendor Show Page */
+
+/*.vendor_show {
+
+  display: inline;
+  float: left;
+}*/
+/*.vendor_info {
+  width: 50%;
+}*/
+
+/*.profile_pic {
+  float: right;
+}*/
+
+section {
+    width: 100%;
+
+    margin: auto;
+    padding: 10px;
+}
+.vendor_info {
+    width: 50%;
+   
+    float: left;
+}
+.profile_pic {
+    margin-left: 50%;
+    height: 200px;
+    border: 1px solid black;
+
+}
+
