@@ -23,3 +23,31 @@ end
 pp data
 
 p Market.create(data)
+
+
+ Product.find_or_create_by(
+                           id: 1,
+                            name: "Artisan"
+                          )
+
+ Product.find_or_create_by(
+                           id: 2,
+                            name: "Produce"
+                          )
+
+ Product.find_or_create_by(
+                           id: 3,
+                            name: "Food & Drink"
+                          )
+
+ Product.find_or_create_by(
+                           id: 4,
+                            name: "Health & Beauty"
+                          )
+
+ Product.find_or_create_by(
+                           id: 5,
+                            name: "Services"
+                          )
+
+p " The products are:#{Product.all.inspect}"
