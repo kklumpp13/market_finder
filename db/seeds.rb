@@ -25,29 +25,68 @@ pp data
 p Market.create(data)
 
 
- Product.find_or_create_by(
-                           id: 1,
-                            name: "Artisan"
-                          )
+ products = [{
+             id: 1,
+            name: "Artisan"
+            },
+            {
+             id: 2,
+              name: "Produce"
+            },{
+              id: 3,
+              name: "Food & Drink"
+              },{
+             id: 4,
+             name: "Health & Beauty"
+                },{
+             id: 5,
+             name: "Services"
+                  }]
 
- Product.find_or_create_by(
-                           id: 2,
-                            name: "Produce"
-                          )
 
- Product.find_or_create_by(
-                           id: 3,
-                            name: "Food & Drink"
-                          )
 
- Product.find_or_create_by(
-                           id: 4,
-                            name: "Health & Beauty"
-                          )
-
- Product.find_or_create_by(
-                           id: 5,
-                            name: "Services"
-                          )
+products.each do |product_params|
+  Product.find_or_create_by(product_params)
+end
 
 p " The products are:#{Product.all.inspect}"
+
+
+vendors = [
+  {
+    id: 1,
+    name: "Krystal's Jewelry",
+    description: "Liquorice macaroon pastry jelly sweet roll pastry....",
+    email: "test@test.com",
+    website: "www.test.com",
+    facebook: "#",
+    phone: "",
+    twitter: "#",
+    instagram: "",
+    product_id: 1,
+    thumbnail_file_name: "pastries.jpg",
+    thumbnail_content_type: "image/jpeg"
+  },
+  {
+
+    id: 2,
+    name: "Green Beans & Co.",
+    description: "Liquorice macaroon pastry jelly sweet roll pastry....",
+    email: "test@test.com",
+    website: "www.google.com",
+    facebook: "",
+    phone: "561-000-0000",
+    twitter: "",
+    instagram: "",
+    product_id: 2,
+    thumbnail_file_name: "gb.jpg",
+    thumbnail_content_type: "image/jpeg",
+  },
+]
+
+vendors.each do |vendor_params|
+  Vendor.find_or_create_by(vendor_params)
+end
+
+# Name images for vendors vendor_1.jpg and put them in app/assets/images/vendors/
+
