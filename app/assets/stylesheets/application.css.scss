@@ -114,6 +114,7 @@ margin: 0 auto;
   nav {
     float: right;
     ul {
+      overflow: hidden;
       list-style: none;
       margin: 0;
       li {
@@ -127,6 +128,11 @@ margin: 0 auto;
     }
   }
 }
+
+
+ 
+
+
 
 #banner {
   background-repeat: no-repeat;
@@ -200,6 +206,7 @@ textarea {
   display: inline;
 
 }*/
+
 
 @import "bourbon";  
 @import "neat";

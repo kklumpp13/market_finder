@@ -91,7 +91,7 @@ text-align: center;
   float: right;
 }*/
 
-section {
+/*section {
     width: 100%;
 
     margin: auto;
@@ -107,5 +107,33 @@ section {
     height: 200px;
     border: 1px solid black;
 
+}*/
+
+section {
+  @include outer-container;
+  article { @include span-columns(6);}
+  aside {@include span-columns(6);
+         @include omega();}
+
 }
+
+
+
+
+/*section {
+  @include outer-container;
+  aside { @include span-columns(3); }
+  article { @include span-columns(9); 
+          @include omega();}
+}*/
+
+
+
+
+
+
+
+
+
+
 

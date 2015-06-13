@@ -25,6 +25,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'devise'
+gem 'httparty'
 
 gem 'geocoder'
 gem 'zip-codes'
@@ -32,6 +33,8 @@ gem "paperclip", "~> 4.2"
 gem 'pickadate-rails'
 gem 'bourbon'
 gem 'neat', '~> 1.7.2'
+gem 'bootstrap-sass', '~> 3.3.4.1'
+gem 'nokogiri'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -52,7 +55,6 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
-  gem 'httparty'
-  gem 'nokogiri'
+
 end
 

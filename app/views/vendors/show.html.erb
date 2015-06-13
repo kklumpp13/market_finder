@@ -2,38 +2,38 @@
   <div class="vendor_banner">
     <div class="wrapper_skinny vendor_show">
 
-    <section>
-      <div class="vendor_info">
-      <h1><%= @vendor.name %></h1>
-      <p class="description"><%= simple_format(@vendor.description) %></p>
-      <h2>Contact Us!</h2>
-      <% unless @vendor.email.blank? %>
-        <a href="<%= @vendor.email %>" class="contact_link">Email</a>
-      <% end %>
-      <% unless @vendor.phone.blank? %>
-        <a href="<%= @vendor.phone %>" class="contact_link">Phone</a>
-      <% end %>
-      <% unless @vendor.website.blank? %>
-        <a href="<%= @vendor.website %>" class="contact_link">Website</a>
-      <% end %>
-      <% unless @vendor.facebook.blank? %>
-        <a href="<%= @vendor.facebook %>" class="contact_link">Facebook</a>
-      <% end %>
-      <% unless @vendor.twitter.blank? %>
-        <a href="<%= @vendor.twitter %>" class="contact_link">Twitter</a>
-      <% end %>
-      <% unless @vendor.instagram.blank? %>
-        <a href="<%= @vendor.instagram %>" class="contact_link">Instagram</a>
-      <% end %><br>
-      </div>
+    <section class="vendor_profile">
+      <article>
+        <h1><%= @vendor.name %></h1>
+        <p class="description"><%= simple_format(@vendor.description) %></p>
+        <h2>Contact Us!</h2>
+        <% unless @vendor.email.blank? %>
+          <a href="<%= @vendor.email %>" class="contact_link">Email</a>
+        <% end %>
+        <% unless @vendor.phone.blank? %>
+          <a href="<%= @vendor.phone %>" class="contact_link">Phone</a>
+        <% end %>
+        <% unless @vendor.website.blank? %>
+          <a href="<%= @vendor.website %>" class="contact_link">Website</a>
+        <% end %>
+        <% unless @vendor.facebook.blank? %>
+          <a href="<%= @vendor.facebook %>" class="contact_link">Facebook</a>
+        <% end %>
+        <% unless @vendor.twitter.blank? %>
+          <a href="<%= @vendor.twitter %>" class="contact_link">Twitter</a>
+        <% end %>
+        <% unless @vendor.instagram.blank? %>
+          <a href="<%= @vendor.instagram %>" class="contact_link">Instagram</a>
+        <% end %><br>
+      </article>
 
-      <div class="profile_pic">
+      <aside class="profile_pic">
       <% unless @vendor.thumbnail.blank? %>
         <%= image_tag @vendor.thumbnail.url(:medium) %>
       <% end %><br>
-      </div>
+      </aside>
   
-</section>
+    </section>
       <%= link_to 'Edit', edit_vendor_path(@vendor) %> |
 <%= link_to 'Back', vendors_path %>
     </div>
@@ -43,7 +43,10 @@
 </div>
 
 
-
+<section>
+  <aside>What is it about?</aside>
+  <article>Neat is an open source semantic grid framework built on top of Sass and Bourbon…</article>
+</section>
 
 
 
