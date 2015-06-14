@@ -30,9 +30,10 @@ class VendorsController < ApplicationController
   # POST /vendors.json
   def create
     @vendor = Vendor.new(vendor_params)
-
+    @markets = Market.where(id: params["markets"])
     respond_to do |format|
       if @vendor.save
+        @vendor.markets << @markets
         format.html { redirect_to @vendor, notice: 'Vendor was successfully created.' }
         format.json { render :show, status: :created, location: @vendor }
       else
@@ -47,6 +48,9 @@ class VendorsController < ApplicationController
   def update
     respond_to do |format|
       if @vendor.update(vendor_params)
+        @markets = Market.where(id: params["markets"])
+        @vendor.markets.destroy_all
+        @vendor.markets << @markets
         format.html { redirect_to @vendor, notice: 'Vendor was successfully updated.' }
         format.json { render :show, status: :ok, location: @vendor }
       else

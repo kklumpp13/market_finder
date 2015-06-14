@@ -47,6 +47,13 @@
     <%= f.label :instagram %><br>
     <%= f.text_field :instagram %>
   </div>
+ <div class="field">
+    <%= f.label :markets %><br>
+    <%#= f.select :markets, options_for_select(Market.all.collect {|market| [market.name, market.id]}, @vendor.markets.collect { |market| market.id }), {multiple: true, size: 5} %>
+    <%#= f.collection_select :markets, Market.all, :id, :name, multiple: true %>
+    <%= select_tag 'markets', options_from_collection_for_select(Market.all,"id","name"),  :multiple => true, class: 'form-control'%>
+  </div>
+
   <div class="field">
     <%= f.label :date %><br>
     <%= f.text_field :date, class:"datepicker" %>
