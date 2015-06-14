@@ -35,7 +35,8 @@
   
     </section>
       <%= link_to 'Edit', edit_vendor_path(@vendor) %> |
-<%= link_to 'Back', vendors_path %>
+      <%= link_to 'Back', vendors_path %> |
+      <%= link_to 'Delete', vendor_path, method: :delete, data: {confirm: "Are you sure?"} %>
     </div>
     
   </div>
