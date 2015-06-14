@@ -3,6 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+/*=================================*/
+/* VENDOR INDEX                    */
+/*=================================*/
+
 #vendors {
   padding-bottom: 3rem;
   ul {
@@ -76,7 +80,22 @@ text-align: center;
 
 }
 
-/* Vendor Show Page */
+/*.container {
+position: relative;
+
+}
+
+.vendor_number {
+
+  position: absolute;
+  bottom: 0;
+}*/
+
+
+
+/*=================================*/
+/* VENDOR SHOW                     */
+/*=================================*/
 
 /*.vendor_show {
 
@@ -126,6 +145,11 @@ section {
   article { @include span-columns(9); 
           @include omega();}
 }*/
+
+
+
+
+
 
 
 
