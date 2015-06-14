@@ -19,8 +19,9 @@
   </header>
   <div class="wrapper_skinny">
     <h1>Discover farmer's markets and follow your favorite vendors.</h1>
-    <%= link_to "Explore a market", welcome_customer_landing_path, class:"button  button_highlight" %>
-    <%= link_to "Merchants", welcome_vendor_landing_path, class: "button button_white" %>
+    <%= link_to "Search by location", markets_path, class:"button button_merchant" %>
+    <%= link_to "Search by vendors", vendors_path, class:"button button_white" %>
+    <%= link_to "Merchant Info", welcome_vendor_landing_path, class: "button button_dark" %>
   </div>  
 </div>
 

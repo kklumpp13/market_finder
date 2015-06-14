@@ -5,6 +5,8 @@ $light: #EDEFF5;
 $devise: #DC2031;
 $merchant: #C13213;
 $cherry: #950B42;
+$home: #749730;
+
 
 
 /*=================================*/
@@ -102,6 +104,15 @@ margin: 0 auto;
 .button_white {
   background: $white;
   color: $dark;
+  transition: background .4s ease-in-out;
+  &:hover {
+    background: darken($white, 7.5%);
+  }
+}
+
+.button_dark {
+  background: $home;
+  color: $white;
   transition: background .4s ease-in-out;
   &:hover {
     background: darken($white, 7.5%);
