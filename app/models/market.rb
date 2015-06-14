@@ -1,4 +1,5 @@
 class Market < ActiveRecord::Base
+  has_and_belongs_to_many :vendors
   validates_format_of \
     :zip,
     with: /\A\d{5}-\d{4}|\A\d{5}\z/,
