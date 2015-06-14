@@ -1,4 +1,5 @@
 class VendorsController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :set_vendor, only: [:show, :edit, :update, :destroy]
   # layout "header"
   # GET /vendors
