@@ -36,6 +36,7 @@ gem 'neat', '~> 1.7.2'
 gem 'bootstrap-sass', '~> 3.3.4.1'
 gem 'nokogiri'
 gem 'will_paginate', '~> 3.0.7'
+gem 'friendly_id', '~> 5.1.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
