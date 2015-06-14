@@ -1,19 +1,18 @@
 <div id="banner" class="vendors_banner">
-
 </div>
 
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p> -->
 
 
 
 <div class="vendor_category">
   <div class="vendor_heading">
     <ul>
-      <li>
+      <li class="vendor_link">
         <%= link_to "All", vendors_path %>
       </li>
       <% Product.all.each do |product| %>
-      <li>
+      <li class="vendor_link">
         <%= link_to product.name, vendors_path(product: product.name) %>
       </li>
       <% end %>
@@ -21,9 +20,10 @@
   </div>
 </div>
 
+
 <div id="vendors" class="cf">
    <div class="wrapper">
-    <ul>
+    <ul class="cf">
       <% @vendors.each do |vendor| %>
         <%= link_to vendor do %>
           <li>
@@ -35,8 +35,13 @@
         <% end %>
       <% end %>
     </ul>
+      <div class="pagination_spacing">
+      <%= will_paginate @vendors, previous_label: "Previous", next_label: "Next" %>
+      </div>
    </div>
  </div>
+
+
 
 
 

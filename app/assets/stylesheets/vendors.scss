@@ -3,6 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+/*=================================*/
+/* VENDOR INDEX                    */
+/*=================================*/
+
 #vendors {
   padding-bottom: 3rem;
   ul {
@@ -43,7 +47,7 @@
       }
       .vendor_overview {
         h2 {
-          color: $highlight;
+          color: $devise;
         }
       }
       }
@@ -68,15 +72,41 @@ text-align: center;
         margin-left: 2.5rem;
 
       }
+
       a {
           color: $dark;
           text-decoration: none;
         }
+      .vendor_link {
+         &:hover {
+        a {
+        color: $devise;
+      }
+      }
+
+      }
     }
 
 }
 
-/* Vendor Show Page */
+       
+
+/*.container {
+position: relative;
+
+}
+
+.vendor_number {
+
+  position: absolute;
+  bottom: 0;
+}*/
+
+
+
+/*=================================*/
+/* VENDOR SHOW                     */
+/*=================================*/
 
 /*.vendor_show {
 
@@ -126,6 +156,11 @@ section {
   article { @include span-columns(9); 
           @include omega();}
 }*/
+
+
+
+
+
 
 
 

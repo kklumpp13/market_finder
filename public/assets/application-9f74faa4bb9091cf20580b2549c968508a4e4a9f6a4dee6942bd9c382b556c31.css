@@ -1,0 +1,1737 @@
+@charset "UTF-8";
+/* line 9, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+body {
+  font-family: 'Raleway', sans-serif;
+ /*font-family: 'Lato', sans-serif;
+*/
+}
+
+/* line 14, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+h1, h2 {
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 19, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.wrapper_wide {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 24, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 29, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.wrapper_skinny {
+  width: 60%;
+  margin: 0 auto;
+  /*padding-top: 6.5rem;*/
+}
+
+/* line 36, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.cf:before, cf:after {
+  content: " ";
+  display: table;
+}
+
+/* line 41, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.cf:after {
+  clear: both;
+}
+
+/* line 45, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  display: inline-block;
+  min-width: 8.5rem;
+}
+
+/* line 57, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_highlight {
+  background: #DA5A36;
+  transition: background .4s ease-in-out;
+}
+/* line 60, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_highlight:hover {
+  background: #c54824;
+}
+
+/* line 65, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_devise {
+  background: #DC2031;
+  transition: background .4s ease-in-out;
+}
+/* line 68, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_devise:hover {
+  background: #bb1b2a;
+}
+
+/* line 73, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_cherry {
+  background: #950B42;
+  transition: background .4s ease-in-out;
+}
+/* line 76, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_cherry:hover {
+  background: #710832;
+}
+
+/* line 81, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_merchant {
+  background: #C13213;
+  transition: background .4s ease-in-out;
+}
+/* line 84, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_merchant:hover {
+  background: #9e2910;
+}
+
+/* line 89, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_white {
+  background: #FFFFFF;
+  color: #22292e;
+  transition: background .4s ease-in-out;
+}
+/* line 93, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_white:hover {
+  background: #ececec;
+}
+
+/* line 98, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_block {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 103, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#main_header {
+  color: #22292e;
+  background: #FFFFFF;
+  padding: 2.5rem 0;
+}
+/* line 107, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#main_header #logo {
+  float: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #22292e;
+  text-decoration: none;
+}
+/* line 114, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#main_header nav {
+  float: right;
+}
+/* line 116, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#main_header nav ul {
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+}
+/* line 120, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#main_header nav ul li {
+  display: inline;
+  margin-left: 2.5rem;
+}
+/* line 123, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#main_header nav ul li a {
+  color: #22292e;
+  text-decoration: none;
+}
+
+/* line 137, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 4rem;
+  height: 311px;
+}
+/* line 143, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#banner h1 {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 8rem 0;
+}
+
+/* line 154, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.vendors_banner {
+  background-image: url(/assets/nuts-banner-114cbb47d5bb5563ff947c0962f477f3cfa7e7c60385773bed2f445878572978.jpg);
+}
+
+/* line 158, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.sign_in_banner {
+  background-image: url(/assets/mixed-veggies-banner-8c43666a37a0bb7d5d1c924edae1fbdfb94e617fedb98ab5bd1bc6b6fb3afc65.jpg);
+}
+
+/* line 162, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.sign_up_banner {
+  background-image: url(/assets/cherries-banner-341b364503f092bb21221a376d881ddae0e8874c482fdd4ea2224851fc56716e.jpg);
+}
+
+/* line 166, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.about_banner {
+  background-image: url(/assets/cupcakes-banner-e10e51c26ec44835fd9a95409030d855a693e5ad25ea69f31abff025a5e96d1d.jpg);
+}
+
+/* line 170, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.forgot_password_banner {
+  background-image: url(/assets/beans-banner-441ed4803884e9b5c99bb479297cd487da057c2cb9856bb49d2eafdad951ecad.jpg);
+}
+
+/* line 174, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.field {
+  margin: .5rem 0 1.5rem 0;
+}
+
+/* line 178, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+input[type="email"], input[type="text"], input[type="password"], textarea {
+  width: 100%;
+  height: 2.5rem;
+  padding: .25rem 1rem;
+  background: #EDEFF5;
+  border: 1px solid #dde0ec;
+  border-radius: .35rem;
+  margin-top: .5rem;
+}
+
+/* line 188, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+textarea {
+  min-height: 8rem;
+  margin-top: .5rem !important;
+}
+
+/* line 193, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#form {
+  padding: 0 0 5rem 0;
+}
+
+/* Devise */
+/* line 198, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.devise-links {
+  text-decoration: none;
+  color: #DC2031;
+}
+
+/*Vendor Index Page */
+/*.vendor_heading {
+  display: inline;
+
+}*/
+/* line 4, /usr/local/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, /usr/local/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 77, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 97, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 117, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 161, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 169, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 173, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 370, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 424, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 1, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/welcome.css.scss */
+#background {
+  background-image: url(/assets/chili-background-20ae5c3a348d01e177b831368c1ce3e97ba79b0fea653c58195a00700b94a081.jpg);
+  height: 100vh;
+  /*viewport height */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+/* line 7, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/welcome.css.scss */
+#background header {
+  color: #FFFFFF;
+  padding: 3rem 0;
+}
+/* line 10, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/welcome.css.scss */
+#background header #logo {
+  float: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 17, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/welcome.css.scss */
+#background header nav {
+  float: right;
+}
+/* line 19, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/welcome.css.scss */
+#background header nav ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 22, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/welcome.css.scss */
+#background header nav ul li {
+  display: inline;
+  margin-left: 2.5rem;
+  position: relative;
+}
+/* line 26, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/welcome.css.scss */
+#background header nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 34, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/welcome.css.scss */
+#background h1 {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 7rem 0 2rem 0;
+  text-shadow: 0px 0px 3px #000;
+}
+/* line 42, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/welcome.css.scss */
+#background .button {
+  margin: 1.5rem 2.5% 0 2.5%;
+  display: inline-block;
+  min-width: 130px;
+}
+
+/* line 1, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background {
+  color: blue;
+  background-image: url(/assets/berries-background-90553051002607a65c1354f5be704728d68645fac72b0995804e8133ef521974.jpg);
+  height: 100vh;
+  /*viewport height */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+/* line 8, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background header {
+  color: #FFFFFF;
+  padding: 3rem 0;
+}
+/* line 11, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background header #logo {
+  float: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 18, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background header nav {
+  float: right;
+}
+/* line 20, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background header nav ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 23, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background header nav ul li {
+  display: inline;
+  margin-left: 2.5rem;
+  position: relative;
+}
+/* line 27, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background header nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 35, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background h1 {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 7rem 0 2rem 0;
+  text-shadow: 0px 0px 3px #000;
+}
+/* line 43, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background p {
+  color: #FFFFFF;
+  text-shadow: 0px 0px 3px #000;
+}
+/* line 47, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background .button {
+  margin: 1.5rem 2.5% 0 2.5%;
+  display: inline-block;
+  min-width: 130px;
+}
+
+/* line 1, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background {
+  background-image: url(/assets/coffee-background-70bf9f9c01a2ced0824a04d3b947993451340ac04495eddbd65d68f6437d36c7.jpg);
+  height: 100vh;
+  /*viewport height */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+/* line 7, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background header {
+  color: #FFFFFF;
+  padding: 3rem 0;
+}
+/* line 10, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background header #logo {
+  float: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 17, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background header nav {
+  float: right;
+}
+/* line 19, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background header nav ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 22, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background header nav ul li {
+  display: inline;
+  margin-left: 2.5rem;
+  position: relative;
+}
+/* line 26, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background header nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 34, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background h1 {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 7rem 0 2rem 0;
+  text-shadow: 0px 0px 3px #000;
+}
+/* line 42, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background p {
+  color: #FFFFFF;
+  text-shadow: 0px 0px 3px #000;
+}
+/* line 46, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background .button {
+  margin: 1.5rem 2.5% 0 2.5%;
+  display: inline-block;
+  min-width: 130px;
+}
+
+/* line 6, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+#vendors {
+  padding-bottom: 3rem;
+}
+/* line 8, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+#vendors ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+/* line 12, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+#vendors ul li {
+  width: 23%;
+  float: left;
+  margin: 0 1% 2rem 1%;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  border-radius: .35rem;
+}
+/* line 19, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+#vendors ul li img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: .35rem .35rem 0 0;
+}
+/* line 24, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+#vendors ul li .vendor_overview {
+  padding: 1rem 7.5%;
+}
+/* line 26, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+#vendors ul li .vendor_overview h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #22292e;
+  text-align: center;
+}
+/* line 33, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+#vendors ul li .vendor_overview .vendor_description {
+  color: #9aaab5;
+  font-size: .9rem;
+  margin: .5rem 0 .25rem 0;
+}
+/* line 41, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+#vendors ul li:hover img {
+  opacity: .8;
+}
+/* line 45, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+#vendors ul li:hover .vendor_overview h2 {
+  color: #DA5A36;
+}
+
+/* line 54, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor_category {
+  text-align: center;
+}
+
+/* line 61, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor_heading ul {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 2.5rem;
+}
+/* line 66, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor_heading ul li {
+  display: inline;
+  margin-left: 2.5rem;
+}
+/* line 71, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor_heading ul a {
+  color: #22292e;
+  text-decoration: none;
+}
+
+/* Vendor Show Page */
+/*.vendor_show {
+
+  display: inline;
+  float: left;
+}*/
+/*.vendor_info {
+  width: 50%;
+}*/
+/*.profile_pic {
+  float: right;
+}*/
+/*section {
+    width: 100%;
+
+    margin: auto;
+    padding: 10px;
+}
+.vendor_info {
+    width: 50%;
+   
+    float: left;
+}
+.profile_pic {
+    margin-left: 50%;
+    height: 200px;
+    border: 1px solid black;
+
+}*/
+/* line 112, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+section {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /usr/local/lib/ruby/gems/2.2.0/gems/bourbon-4.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+section::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 114, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+section article {
+  float: left;
+  display: block;
+  margin-right: 2.3576516%;
+  width: 48.8211742%;
+}
+/* line 89, /usr/local/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+section article:last-child {
+  margin-right: 0;
+}
+/* line 115, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+section aside {
+  float: left;
+  display: block;
+  margin-right: 2.3576516%;
+  width: 48.8211742%;
+  margin-right: 0;
+}
+/* line 89, /usr/local/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+section aside:last-child {
+  margin-right: 0;
+}
+
+/*section {
+  @include outer-container;
+  aside { @include span-columns(3); }
+  article { @include span-columns(9); 
+          @include omega();}
+}*/
+/* line 1, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about {
+  background-image: url(/images/berries.jpg);
+  height: 100vh;
+  /*viewport height */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+/* line 7, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about header {
+  color: #FFFFFF;
+  padding: 3rem 0;
+}
+/* line 10, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about header #logo {
+  float: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 17, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about header nav {
+  float: right;
+}
+/* line 19, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about header nav ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 22, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about header nav ul li {
+  display: inline;
+  margin-left: 2.5rem;
+  position: relative;
+}
+/* line 26, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about header nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 34, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about h1 {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 7rem 0 2rem 0;
+}
+/* line 41, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about p {
+  color: #FFFFFF;
+}
+/* line 44, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about .button {
+  margin: 1.5rem 2.5% 0 2.5%;
+  display: inline-block;
+  min-width: 130px;
+}
+
+/* line 51, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+.about p {
+  font-size: 1.1em;
+}
+
+/* ==========================================================================
+   $BASE-PICKER
+   ========================================================================== */
+/**
+ * Note: the root picker element should *NOT* be styled more than what’s here.
+ */
+/* line 7, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.css */
+.picker {
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.2;
+  color: #000000;
+  position: absolute;
+  z-index: 10000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/**
+ * The picker input element.
+ */
+/* line 22, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.css */
+.picker__input {
+  cursor: default;
+}
+
+/**
+ * When the picker is opened, the input element is “activated”.
+ */
+/* line 28, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.css */
+.picker__input.picker__input--active {
+  border-color: #0089ec;
+}
+
+/**
+ * The holder is the only “scrollable” top-level container element.
+ */
+/* line 34, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.css */
+.picker__holder {
+  width: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*!
+ * Classic picker styling for pickadate.js
+ * Demo: http://amsul.github.io/pickadate.js
+ */
+/**
+ * Note: the root picker element should *NOT* be styled more than what’s here.
+ */
+/* line 47, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.css */
+.picker {
+  width: 100%;
+}
+
+/**
+ * The holder is the base of the picker.
+ */
+/* line 53, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.css */
+.picker__holder {
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #aaaaaa;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+  min-width: 176px;
+  max-width: 466px;
+  max-height: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  opacity: 0;
+  -webkit-transform: translateY(-1em) perspective(600px) rotateX(10deg);
+  transform: translateY(-1em) perspective(600px) rotateX(10deg);
+  transition: -webkit-transform 0.15s ease-out, opacity 0.15s ease-out, max-height 0s 0.15s, border-width 0s 0.15s;
+  transition: transform 0.15s ease-out, opacity 0.15s ease-out, max-height 0s 0.15s, border-width 0s 0.15s;
+}
+
+/**
+ * The frame and wrap work together to ensure that
+ * clicks within the picker don’t reach the holder.
+ */
+/* line 77, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.css */
+.picker__frame {
+  padding: 1px;
+}
+
+/* line 80, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.css */
+.picker__wrap {
+  margin: -1px;
+}
+
+/**
+ * When the picker opens...
+ */
+/* line 86, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.css */
+.picker--opened .picker__holder {
+  max-height: 25em;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  -webkit-transform: translateY(0) perspective(600px) rotateX(0);
+  transform: translateY(0) perspective(600px) rotateX(0);
+  transition: -webkit-transform 0.15s ease-out, opacity 0.15s ease-out, max-height 0s, border-width 0s;
+  transition: transform 0.15s ease-out, opacity 0.15s ease-out, max-height 0s, border-width 0s;
+  box-shadow: 0 6px 18px 1px rgba(0, 0, 0, 0.12);
+}
+
+/* ==========================================================================
+   $BASE-DATE-PICKER
+   ========================================================================== */
+/**
+ * The picker box.
+ */
+/* line 7, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__box {
+  padding: 0 1em;
+}
+
+/**
+ * The header containing the month and year stuff.
+ */
+/* line 13, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__header {
+  text-align: center;
+  position: relative;
+  margin-top: .75em;
+}
+
+/**
+ * The month and year labels.
+ */
+/* line 21, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__month,
+.picker__year {
+  font-weight: 500;
+  display: inline-block;
+  margin-left: .25em;
+  margin-right: .25em;
+}
+
+/* line 28, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__year {
+  color: #999999;
+  font-size: .8em;
+  font-style: italic;
+}
+
+/**
+ * The month and year selectors.
+ */
+/* line 36, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__select--month,
+.picker__select--year {
+  border: 1px solid #b7b7b7;
+  height: 2em;
+  padding: .5em;
+  margin-left: .25em;
+  margin-right: .25em;
+}
+
+@media (min-width: 24.5em) {
+  /* line 45, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+  .picker__select--month,
+  .picker__select--year {
+    margin-top: -0.5em;
+  }
+}
+/* line 50, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__select--month {
+  width: 35%;
+}
+
+/* line 53, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__select--year {
+  width: 22.5%;
+}
+
+/* line 56, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__select--month:focus,
+.picker__select--year:focus {
+  border-color: #0089ec;
+}
+
+/**
+ * The month navigation buttons.
+ */
+/* line 63, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__nav--prev,
+.picker__nav--next {
+  position: absolute;
+  padding: .5em 1.25em;
+  width: 1em;
+  height: 1em;
+  box-sizing: content-box;
+  top: -0.25em;
+}
+
+@media (min-width: 24.5em) {
+  /* line 73, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+  .picker__nav--prev,
+  .picker__nav--next {
+    top: -0.33em;
+  }
+}
+/* line 78, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__nav--prev {
+  left: -1em;
+  padding-right: 1.25em;
+}
+
+@media (min-width: 24.5em) {
+  /* line 83, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+  .picker__nav--prev {
+    padding-right: 1.5em;
+  }
+}
+/* line 87, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__nav--next {
+  right: -1em;
+  padding-left: 1.25em;
+}
+
+@media (min-width: 24.5em) {
+  /* line 92, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+  .picker__nav--next {
+    padding-left: 1.5em;
+  }
+}
+/* line 96, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__nav--prev:before,
+.picker__nav--next:before {
+  content: " ";
+  border-top: .5em solid transparent;
+  border-bottom: .5em solid transparent;
+  border-right: 0.75em solid #000000;
+  width: 0;
+  height: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 107, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__nav--next:before {
+  border-right: 0;
+  border-left: 0.75em solid #000000;
+}
+
+/* line 111, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__nav--prev:hover,
+.picker__nav--next:hover {
+  cursor: pointer;
+  color: #000000;
+  background: #b1dcfb;
+}
+
+/* line 117, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__nav--disabled,
+.picker__nav--disabled:hover,
+.picker__nav--disabled:before,
+.picker__nav--disabled:before:hover {
+  cursor: default;
+  background: none;
+  border-right-color: #f5f5f5;
+  border-left-color: #f5f5f5;
+}
+
+/**
+ * The calendar table of dates
+ */
+/* line 129, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__table {
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  font-size: inherit;
+  width: 100%;
+  margin-top: .75em;
+  margin-bottom: .5em;
+}
+
+@media (min-height: 33.875em) {
+  /* line 140, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+  .picker__table {
+    margin-bottom: .75em;
+  }
+}
+/* line 144, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__table td {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * The weekday labels
+ */
+/* line 151, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__weekday {
+  width: 14.285714286%;
+  font-size: .75em;
+  padding-bottom: .25em;
+  color: #999999;
+  font-weight: 500;
+  /* Increase the spacing a tad */
+}
+
+@media (min-height: 33.875em) {
+  /* line 160, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+  .picker__weekday {
+    padding-bottom: .5em;
+  }
+}
+/**
+ * The days on the calendar
+ */
+/* line 167, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day {
+  padding: .3125em 0;
+  font-weight: 200;
+  border: 1px solid transparent;
+}
+
+/* line 172, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--today {
+  position: relative;
+}
+
+/* line 175, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--today:before {
+  content: " ";
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 0;
+  height: 0;
+  border-top: 0.5em solid #0059bc;
+  border-left: .5em solid transparent;
+}
+
+/* line 185, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--disabled:before {
+  border-top-color: #aaaaaa;
+}
+
+/* line 188, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--outfocus {
+  color: #dddddd;
+}
+
+/* line 191, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--infocus:hover,
+.picker__day--outfocus:hover {
+  cursor: pointer;
+  color: #000000;
+  background: #b1dcfb;
+}
+
+/* line 197, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--highlighted {
+  border-color: #0089ec;
+}
+
+/* line 200, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--highlighted:hover,
+.picker--focused .picker__day--highlighted {
+  cursor: pointer;
+  color: #000000;
+  background: #b1dcfb;
+}
+
+/* line 206, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--selected,
+.picker__day--selected:hover,
+.picker--focused .picker__day--selected {
+  background: #0089ec;
+  color: #ffffff;
+}
+
+/* line 212, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--disabled,
+.picker__day--disabled:hover,
+.picker--focused .picker__day--disabled {
+  background: #f5f5f5;
+  border-color: #f5f5f5;
+  color: #dddddd;
+  cursor: default;
+}
+
+/* line 220, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--highlighted.picker__day--disabled,
+.picker__day--highlighted.picker__day--disabled:hover {
+  background: #bbbbbb;
+}
+
+/**
+ * The footer containing the "today", "clear", and "close" buttons.
+ */
+/* line 227, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__footer {
+  text-align: center;
+}
+
+/* line 230, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--today,
+.picker__button--clear,
+.picker__button--close {
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  font-size: .8em;
+  padding: .66em 0;
+  font-weight: bold;
+  width: 33%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/* line 242, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--today:hover,
+.picker__button--clear:hover,
+.picker__button--close:hover {
+  cursor: pointer;
+  color: #000000;
+  background: #b1dcfb;
+  border-bottom-color: #b1dcfb;
+}
+
+/* line 250, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--today:focus,
+.picker__button--clear:focus,
+.picker__button--close:focus {
+  background: #b1dcfb;
+  border-color: #0089ec;
+  outline: none;
+}
+
+/* line 257, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--today:before,
+.picker__button--clear:before,
+.picker__button--close:before {
+  position: relative;
+  display: inline-block;
+  height: 0;
+}
+
+/* line 264, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--today:before,
+.picker__button--clear:before {
+  content: " ";
+  margin-right: .45em;
+}
+
+/* line 269, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--today:before {
+  top: -0.05em;
+  width: 0;
+  border-top: 0.66em solid #0059bc;
+  border-left: .66em solid transparent;
+}
+
+/* line 275, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--clear:before {
+  top: -0.25em;
+  width: .66em;
+  border-top: 3px solid #ee2200;
+}
+
+/* line 280, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--close:before {
+  content: "\D7";
+  top: -0.1em;
+  vertical-align: top;
+  font-size: 1.1em;
+  margin-right: .35em;
+  color: #777777;
+}
+
+/* line 288, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--today[disabled],
+.picker__button--today[disabled]:hover {
+  background: #f5f5f5;
+  border-color: #f5f5f5;
+  color: #dddddd;
+  cursor: default;
+}
+
+/* line 295, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--today[disabled]:before {
+  border-top-color: #aaaaaa;
+}
+
+/* ==========================================================================
+   $CLASSIC-DATE-PICKER
+   ========================================================================== */
+/* ==========================================================================
+   $BASE-TIME-PICKER
+   ========================================================================== */
+/**
+ * The list of times.
+ */
+/* line 7, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker__list {
+  list-style: none;
+  padding: 0.75em 0 4.2em;
+  margin: 0;
+}
+
+/**
+ * The times on the clock.
+ */
+/* line 15, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker__list-item {
+  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  margin-bottom: -1px;
+  position: relative;
+  background: #ffffff;
+  padding: .75em 1.25em;
+}
+
+@media (min-height: 46.75em) {
+  /* line 24, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+  .picker__list-item {
+    padding: .5em 1em;
+  }
+}
+/* Hovered time */
+/* line 29, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker__list-item:hover {
+  cursor: pointer;
+  color: #000000;
+  background: #b1dcfb;
+  border-color: #0089ec;
+  z-index: 10;
+}
+
+/* Highlighted and hovered/focused time */
+/* line 37, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker__list-item--highlighted {
+  border-color: #0089ec;
+  z-index: 10;
+}
+
+/* line 41, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker__list-item--highlighted:hover,
+.picker--focused .picker__list-item--highlighted {
+  cursor: pointer;
+  color: #000000;
+  background: #b1dcfb;
+}
+
+/* Selected and hovered/focused time */
+/* line 48, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker__list-item--selected,
+.picker__list-item--selected:hover,
+.picker--focused .picker__list-item--selected {
+  background: #0089ec;
+  color: #ffffff;
+  z-index: 10;
+}
+
+/* Disabled time */
+/* line 56, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker__list-item--disabled,
+.picker__list-item--disabled:hover,
+.picker--focused .picker__list-item--disabled {
+  background: #f5f5f5;
+  border-color: #f5f5f5;
+  color: #dddddd;
+  cursor: default;
+  border-color: #dddddd;
+  z-index: auto;
+}
+
+/**
+ * The clear button
+ */
+/* line 69, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker--time .picker__button--clear {
+  display: block;
+  width: 80%;
+  margin: 1em auto 0;
+  padding: 1em 1.25em;
+  background: none;
+  border: 0;
+  font-weight: 500;
+  font-size: .67em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #666;
+}
+
+/* line 82, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker--time .picker__button--clear:hover,
+.picker--time .picker__button--clear:focus {
+  color: #000000;
+  background: #b1dcfb;
+  background: #ee2200;
+  border-color: #ee2200;
+  cursor: pointer;
+  color: #ffffff;
+  outline: none;
+}
+
+/* line 92, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker--time .picker__button--clear:before {
+  top: -0.25em;
+  color: #666;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+/* line 98, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker--time .picker__button--clear:hover:before,
+.picker--time .picker__button--clear:focus:before {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* ==========================================================================
+   $CLASSIC-TIME-PICKER
+   ========================================================================== */
+/**
+ * Note: the root picker element should __NOT__ be styled
+ * more than what’s here. Style the `.picker__holder` instead.
+ */
+/* line 111, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker--time {
+  min-width: 256px;
+  max-width: 320px;
+}
+
+/**
+ * The holder is the base of the picker.
+ */
+/* line 118, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker--time .picker__holder {
+  background: #f2f2f2;
+}
+
+@media (min-height: 40.125em) {
+  /* line 122, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+  .picker--time .picker__holder {
+    font-size: .875em;
+  }
+}
+/**
+ * The box contains the list of times.
+ */
+/* line 129, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker--time .picker__box {
+  padding: 0;
+  position: relative;
+}

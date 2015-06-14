@@ -6,6 +6,11 @@ $devise: #DC2031;
 $merchant: #C13213;
 $cherry: #950B42;
 
+
+/*=================================*/
+/* BODY                            */
+/*=================================*/
+
 body {
  font-family: 'Raleway', sans-serif;
  /*font-family: 'Lato', sans-serif;
@@ -15,6 +20,10 @@ h1, h2 {
   font-family: 'Lato', sans-serif;
 
 }
+
+/*=================================*/
+/* WRAPPERS                        */
+/*=================================*/
 
 .wrapper_wide {
   width: 90%;
@@ -41,6 +50,10 @@ margin: 0 auto;
 .cf:after {
   clear: both;
 }
+
+/*=================================*/
+/* BUTTONS                         */
+/*=================================*/
 
 .button {
   color: $white;
@@ -100,6 +113,10 @@ margin: 0 auto;
   margin: 0 auto;
 }
 
+
+/*=================================*/
+/* HEADER                          */
+/*=================================*/
 #main_header {
   color: $dark;
   background: $white;
@@ -128,10 +145,6 @@ margin: 0 auto;
     }
   }
 }
-
-
- 
-
 
 
 #banner {
@@ -171,6 +184,11 @@ margin: 0 auto;
  background-image: image-url("beans-banner.jpg");
 }
 
+
+/*=================================*/
+/* FORMS                           */
+/*=================================*/
+
 .field {
   margin: .5rem 0 1.5rem 0;
 }
@@ -194,18 +212,60 @@ textarea {
   padding: 0 0 5rem 0;
 }
 
-/* Devise */
+/*=================================*/
+/* DEVISE                          */
+/*=================================*/
 .devise-links {
   text-decoration: none;
   color: $devise;
 }
 
+/*=================================*/
+/* PAGINATION                      */
+/*=================================*/
 
-/*Vendor Index Page */
-/*.vendor_heading {
-  display: inline;
+.pagination:before, .pagination:after {
+  content: " ";
+  display: table;
+}
 
-}*/
+.pagination:after {
+  clear: both;
+}
+
+.pagination {
+  text-align: center;
+  margin: 28rem 0 5rem 0;
+  a, .previous_page, .current, .next_page {
+    padding: 0.75rem 1rem;
+    margin: 0 .25rem;
+    border-radius: .15rem;
+    line-height: 1.25;
+    text-decoration: none;
+    background: #EDEFF5;
+    font-weight: 700;
+    font-size: .7rem;
+    font-style: normal; /*override will paginate italics */
+    color: $dark;
+    &:hover {
+      background: $dark;
+      color: white;
+    }
+  }
+  .current {
+    background: $dark;
+    color: $white;
+  }
+  .disabled {
+    color: #C0C0C0;
+    &:hover {
+      color: #C0C0C0;
+      background: #EDEFF5;
+    }
+  }
+}
+
+
 
 
 @import "bourbon";  
