@@ -14,13 +14,17 @@
 
 <%# Hide the whitespace device notices automatically create at top %>
 <% if alert %>
-  <p class="alert">
-    <%= alert %>
-  </p>
+  <div id="notice_wrapper">
+    <p class="alert">
+      <%= alert %>
+    </p>
+  </div>
 <% elsif notice %>
-  <p class="notice">
-    <%= notice %>
-  </p>
+  <div id="notice_wrapper">
+    <p class="notice">
+      <%= notice %>
+    </p>
+  </div>
 <% end %>
 
 
@@ -33,6 +37,14 @@
 
 
 <%= yield %>
+
+<script>
+  setTimeout(function(){
+    $('#notice_wrapper').fadeOut("slow", function() {
+      $this.remove();
+    });
+  }, 2500 );
+</script>
 
 </body>
 </html>

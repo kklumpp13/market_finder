@@ -53,6 +53,21 @@ margin: 0 auto;
   clear: both;
 }
 
+#notice_wrapper {
+  width: 100%;
+  position: absolute;
+  background: rgba(34,41,46, 0.85);
+  z-index: 999;
+  p {
+    color: $white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 1.5rem 0;
+  }
+}
+
+
 /*=================================*/
 /* BUTTONS                         */
 /*=================================*/
@@ -282,6 +297,7 @@ textarea {
 @import "bourbon";  
 @import "neat";
 @import 'normalize';
+
 @import 'welcome';
 @import 'vendor_landing';
 @import 'customer_landing';
