@@ -25,6 +25,18 @@
         <% unless @vendor.instagram.blank? %>
           <a href="<%= @vendor.instagram %>" class="contact_link">Instagram</a>
         <% end %><br>
+        <% unless @vendor.markets.blank? %>
+          <% @vendor.markets.each do |market| %>
+            <p><%= market.name %></p> 
+          <% end %>
+        <% end %><br>
+        <% unless @vendor.date.blank? %>
+          <p><%= @vendor.date %></p>
+        <% end %><br>
+        <% unless @vendor.time.blank? %>
+          <p><%= @vendor.time %></p>
+        <% end %><br>
+
       </article>
 
       <aside class="profile_pic">
