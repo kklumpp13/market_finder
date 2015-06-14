@@ -68,6 +68,7 @@
     <%= f.label :thumbnail %><br>
     <%= f.file_field :thumbnail %>
   </div>
+  <%= f.hidden_field :user_id, value: current_user.id %>
 
 
 

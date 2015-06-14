@@ -46,11 +46,12 @@
       </aside>
   
     </section>
+  
       <%= link_to 'Back', vendors_path %> 
-      <%# if user_signed_in? && @vendor.id == current_user %>
+      <% if user_signed_in? && @vendor.user_id == current_user.id %>
         | <%= link_to 'Edit', edit_vendor_path(@vendor) %> |
         <%= link_to 'Delete', vendor_path, method: :delete, data: {confirm: "Are you sure?"} %>
-      <%# end %>  
+      <% end %>  
     </div>
     
   </div>
