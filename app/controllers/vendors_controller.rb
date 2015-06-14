@@ -5,10 +5,10 @@ class VendorsController < ApplicationController
   # GET /vendors.json
   def index
     if params[:product].blank?
-      @vendors = Vendor.all.order("created_at DESC")
+      @vendors = Vendor.all.order("name ASC").paginate(:page => params[:page], :per_page => 4)
     else
       @product_id = Product.find_by(name:params[:product]).id
-      @vendors = Vendor.where(product_id: @product_id).order("created_at DESC")
+      @vendors = Vendor.where(product_id: @product_id).order("name ASC").paginate(:page => params[:page], :per_page => 4)
     end
   end
 

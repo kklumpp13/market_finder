@@ -8,11 +8,11 @@
 <div class="vendor_category">
   <div class="vendor_heading">
     <ul>
-      <li>
+      <li class="vendor_link">
         <%= link_to "All", vendors_path %>
       </li>
       <% Product.all.each do |product| %>
-      <li>
+      <li class="vendor_link">
         <%= link_to product.name, vendors_path(product: product.name) %>
       </li>
       <% end %>
@@ -35,17 +35,13 @@
         <% end %>
       <% end %>
     </ul>
-    <%#= will_paginate @podcasts, previous_label: "Previous", next_label: "Next" %>
-
+      <div class="pagination_spacing">
+      <%= will_paginate @vendors, previous_label: "Previous", next_label: "Next" %>
+      </div>
    </div>
  </div>
 
- <div class="pagination">
-   <span class="previous_page disabled">Previous</span>
-   <em class="current">1</em>
-    <a href="#">2</a>
-    <a href="#" class="next_page">Next</a>
- </div>
+
 
 
 
