@@ -36,7 +36,8 @@ gem 'neat', '~> 1.7.2'
 gem 'bootstrap-sass', '~> 3.3.4.1'
 gem 'nokogiri'
 gem 'will_paginate', '~> 3.0.7'
-# gem 'font-awesome-sass'
+gem 'font-awesome-sass'
+gem 'friendly_id', '~> 5.1.0'
 
 
 # Use ActiveModel has_secure_password
@@ -51,6 +52,7 @@ gem 'will_paginate', '~> 3.0.7'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'awesome_print'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
