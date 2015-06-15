@@ -6,14 +6,44 @@
     <section class="vendor_profile">
       <article>
         <h1><%= @vendor.name %></h1>
-        <p class="description"><%= simple_format(@vendor.description) %></p>
+        <p class="description"><%= simple_format(@vendor.description) %></p>    
+        <h4>You can find us at:</h4>
+        <% unless @vendor.markets.blank? %>
+          <% @vendor.markets.each do |market| %>
+            <p><%= market.name %></p> 
+          <% end %>
+        <% end %><br>
+        <h4>Upcoming Events</h4>
+        <% unless @vendor.date.blank? && @vendor.time.blank? %>
+          <p><%=@vendor.date%>, <%= @vendor.time %> at </p>
+        <% end %>
+
+        
+
         <% if current_user.nil? || !current_user.following?(@vendor) %>
           <%= link_to "Follow", follow_vendor_path(@vendor), class: "follow_button" %> 
         <% elsif current_user.following?(@vendor) %>
           <%= link_to "Unfollow", unfollow_vendor_path(@vendor), class: "follow_button" %>
         <% end %>
-        <p><i class="fa fa-users"></i> <%= @vendor.followers.size %> Followers</p>
-        <h2>Contact Us!</h2>
+        <p><i class="fa fa-users"></i> <%= @vendor.followers.size %> Followers</p>   
+      </article>
+
+      <aside class="profile_pic">
+      <% unless @vendor.thumbnail.blank? %>
+        <%= image_tag @vendor.thumbnail.url(:medium) %>
+      <% end %><br>
+      </aside>
+  
+    </section>
+  
+      <%= link_to 'Back', vendors_path %> 
+      <% if user_signed_in? && @vendor.user_id == current_user.id %>
+        | <%= link_to 'Edit Profile', edit_vendor_path(@vendor) %> |
+        <%= link_to 'Delete Profile', vendor_path, method: :delete, data: {confirm: "Are you sure?"} %>
+      <% end %> 
+
+    <div>
+      <h2>Contact Us!</h2>
         <% unless @vendor.email.blank? %>
           <a href="<%= @vendor.email %>" class="contact_link">Email</a>
         <% end %>
@@ -32,38 +62,7 @@
         <% unless @vendor.instagram.blank? %>
           <a href="<%= @vendor.instagram %>" class="contact_link">Instagram</a>
         <% end %><br>
-        <% unless @vendor.markets.blank? %>
-          <% @vendor.markets.each do |market| %>
-            <p><%= market.name %></p> 
-          <% end %>
-        <% end %><br>
-        <% unless @vendor.date.blank? %>
-          <p><%= @vendor.date %></p>
-        <% end %><br>
-        <% unless @vendor.time.blank? %>
-          <p><%= @vendor.time %></p>
-        <% end %><br>    
-         
-          
-       
-
-
-      </article>
-
-      <aside class="profile_pic">
-      <% unless @vendor.thumbnail.blank? %>
-        <%= image_tag @vendor.thumbnail.url(:medium) %>
-      <% end %><br>
-      </aside>
-  
-    </section>
-  
-      <%= link_to 'Back', vendors_path %> 
-      <% if user_signed_in? && @vendor.user_id == current_user.id %>
-        | <%= link_to 'Edit', edit_vendor_path(@vendor) %> |
-        <%= link_to 'Delete', vendor_path, method: :delete, data: {confirm: "Are you sure?"} %>
-      <% end %> 
-
+    </div>
 
            
     </div>
