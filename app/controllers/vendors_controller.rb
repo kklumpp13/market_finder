@@ -72,13 +72,13 @@ class VendorsController < ApplicationController
   end
 
   def follow
-    @vendor = Vendor.find(params[:id])
+    @vendor = Vendor.friendly.find(params[:id])
     current_user.follow(@vendor)
     redirect_to :back
   end
 
   def unfollow
-    @vendor = Vendor.find(params[:id])
+    @vendor = Vendor.friendly.find(params[:id])
     current_user.stop_following(@vendor)
     redirect_to :back
   end

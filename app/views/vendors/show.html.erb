@@ -1,16 +1,18 @@
+
 <div class="vendor_show">
-  <div class="vendor_banner">
+
     <div class="wrapper_skinny vendor_show">
 
     <section class="vendor_profile">
       <article>
         <h1><%= @vendor.name %></h1>
-        <% if current_user.nil? || !current_user.following?(@vendor) %>
-        <%= link_to "Follow", follow_vendor_path(@vendor), class: "button button_highlight" %> 
-      <% elsif current_user.following?(@vendor) %>
-        <%= link_to "Unfollow", unfollow_vendor_path(@vendor), class: "button button_highlight" %>
-      <% end %>
         <p class="description"><%= simple_format(@vendor.description) %></p>
+        <% if current_user.nil? || !current_user.following?(@vendor) %>
+          <%= link_to "Follow", follow_vendor_path(@vendor), class: "follow_button" %> 
+        <% elsif current_user.following?(@vendor) %>
+          <%= link_to "Unfollow", unfollow_vendor_path(@vendor), class: "follow_button" %>
+        <% end %>
+        <p><i class="fa fa-users"></i> <%= @vendor.followers.size %> Followers</p>
         <h2>Contact Us!</h2>
         <% unless @vendor.email.blank? %>
           <a href="<%= @vendor.email %>" class="contact_link">Email</a>
@@ -41,9 +43,9 @@
         <% unless @vendor.time.blank? %>
           <p><%= @vendor.time %></p>
         <% end %><br>    
-         <% unless @vendor.time.blank? %>
-          <p><i class="fa fa-users"></i> <%= @vendor.followers.size %> Followers</p>
-          <% end %><br>
+         
+          
+       
 
 
       </article>
