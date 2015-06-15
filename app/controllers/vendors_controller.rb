@@ -1,6 +1,7 @@
 class VendorsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   before_action :set_vendor, only: [:show, :edit, :update, :destroy]
+  # before_action :check_logged_in, only: [:follow, :unfollow]
   # layout "header"
   # GET /vendors
   # GET /vendors.json
@@ -71,6 +72,21 @@ class VendorsController < ApplicationController
     end
   end
 
+  def follow
+    # if current_user
+      @vendor = Vendor.friendly.find(params[:id])
+      current_user.follow(@vendor)
+      redirect_to :back
+    # else check_logged_in
+    # end
+  end
+
+  def unfollow
+    @vendor = Vendor.friendly.find(params[:id])
+    current_user.stop_following(@vendor)
+    redirect_to :back
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_vendor
@@ -80,5 +96,12 @@ class VendorsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def vendor_params
       params.require(:vendor).permit(:name, :description, :email, :website, :facebook, :phone, :twitter, :instagram, :product_id, :thumbnail, :date, :time, :slug, :user_id)
+    end
+
+    def check_logged_in
+      # unless current_user
+        flash[:warning] = "You have to be logged in as that user to do that!"
+        # redirect_to :show
+      # end
     end
 end
