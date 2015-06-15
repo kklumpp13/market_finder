@@ -5,6 +5,11 @@
     <section class="vendor_profile">
       <article>
         <h1><%= @vendor.name %></h1>
+        <% if current_user.nil? || !current_user.following?(@vendor) %>
+        <%= link_to "Follow", follow_vendor_path(@vendor), class: "button button_highlight" %> 
+      <% elsif current_user.following?(@vendor) %>
+        <%= link_to "Unfollow", unfollow_vendor_path(@vendor), class: "button button_highlight" %>
+      <% end %>
         <p class="description"><%= simple_format(@vendor.description) %></p>
         <h2>Contact Us!</h2>
         <% unless @vendor.email.blank? %>
@@ -35,7 +40,11 @@
         <% end %><br>
         <% unless @vendor.time.blank? %>
           <p><%= @vendor.time %></p>
-        <% end %><br>
+        <% end %><br>    
+         <% unless @vendor.time.blank? %>
+          <p><i class="fa fa-users"></i> <%= @vendor.followers.size %> Followers</p>
+          <% end %><br>
+
 
       </article>
 
@@ -51,7 +60,10 @@
       <% if user_signed_in? && @vendor.user_id == current_user.id %>
         | <%= link_to 'Edit', edit_vendor_path(@vendor) %> |
         <%= link_to 'Delete', vendor_path, method: :delete, data: {confirm: "Are you sure?"} %>
-      <% end %>  
+      <% end %> 
+
+
+           
     </div>
     
   </div>

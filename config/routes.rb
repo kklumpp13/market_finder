@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   resources :markets
-  resources :vendors
+  resources :vendors do
+    member do
+      get :follow
+      get :unfollow
+    end
+  end
 
   get 'welcome/about'
   get 'welcome/vendor_landing'
@@ -26,3 +31,6 @@ Rails.application.routes.draw do
   root 'welcome#index'
   # end
 end
+
+
+

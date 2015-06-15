@@ -71,6 +71,18 @@ class VendorsController < ApplicationController
     end
   end
 
+  def follow
+    @vendor = Vendor.find(params[:id])
+    current_user.follow(@vendor)
+    redirect_to :back
+  end
+
+  def unfollow
+    @vendor = Vendor.find(params[:id])
+    current_user.stop_following(@vendor)
+    redirect_to :back
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_vendor
