@@ -35,10 +35,6 @@ class MarketsController < ApplicationController
   def search
     radius = params[:radius] || 20
     @markets = Market.near(params[:zip], radius)
-<<<<<<< HEAD
-=======
-
->>>>>>> d8c301a0ba879b44a105188c15f93dcbcef5c0ce
     respond_to do |format|
       format.html { render :index }
       format.json { render json: @markets }
