@@ -25,20 +25,18 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'devise'
-gem 'httparty'
 
 gem 'geocoder'
 gem 'zip-codes'
 gem "paperclip", "~> 4.2"
 gem 'pickadate-rails'
+<<<<<<< HEAD
 gem 'bourbon'
 gem 'neat', '~> 1.7.2'
-gem 'bootstrap-sass', '~> 3.3.4.1'
-gem 'nokogiri'
-gem 'will_paginate', '~> 3.0.7'
-gem 'font-awesome-sass'
-gem 'friendly_id', '~> 5.1.0'
-
+gem 'leaflet-rails'
+=======
+gem 'gmaps4rails'
+>>>>>>> d8c301a0ba879b44a105188c15f93dcbcef5c0ce
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -52,9 +50,6 @@ gem 'friendly_id', '~> 5.1.0'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'awesome_print'
-  gem 'better_errors'
-  gem 'binding_of_caller'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
@@ -62,6 +57,6 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
-
+  gem 'httparty'
+  gem 'nokogiri'
 end
-

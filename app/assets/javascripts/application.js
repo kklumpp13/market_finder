@@ -18,4 +18,5 @@
 //= require pickadate/picker.time 
 //= require jquery.turbolinks
 //= require turbolinks
+//= require leaflet
 //= require_tree .

@@ -5,6 +5,16 @@ class MarketsController < ApplicationController
   # GET /markets.json
   def index
     @markets = Market.all
+    respond_to do |format|
+      format.html { render :index }
+      format.json do
+        json = []
+        @markets.each do |mkt|
+          json << mkt.to_json({methods: [:latitude, :longitude]})
+        end
+        render json: json
+      end
+    end
   end
 
   # GET /markets/1
@@ -25,7 +35,14 @@ class MarketsController < ApplicationController
   def search
     radius = params[:radius] || 20
     @markets = Market.near(params[:zip], radius)
-    render :index
+<<<<<<< HEAD
+=======
+
+>>>>>>> d8c301a0ba879b44a105188c15f93dcbcef5c0ce
+    respond_to do |format|
+      format.html { render :index }
+      format.json { render json: @markets }
+    end
   end
 
   # POST /markets
