@@ -30,13 +30,10 @@ gem 'geocoder'
 gem 'zip-codes'
 gem "paperclip", "~> 4.2"
 gem 'pickadate-rails'
-<<<<<<< HEAD
+
 gem 'bourbon'
 gem 'neat', '~> 1.7.2'
 gem 'leaflet-rails'
-=======
-gem 'gmaps4rails'
->>>>>>> d8c301a0ba879b44a105188c15f93dcbcef5c0ce
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

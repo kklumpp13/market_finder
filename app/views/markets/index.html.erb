@@ -4,19 +4,6 @@
 
 <h1>Listing Markets</h1>
 
-<<<<<<< HEAD
-<div id="map"></div>
-=======
-<div style='width: 800px;'>
-  <div id="map" style='width: 800px; height: 400px;'></div>
-</div>
-
-<form id='search-form'>
-  <input id='zip' type='text' placeholder='ZIP Code'>
-  <input type='submit' value='Search'>
-</form>
->>>>>>> d8c301a0ba879b44a105188c15f93dcbcef5c0ce
-
 <table>
   <thead>
     <tr>
@@ -44,48 +31,3 @@
 <br>
 
 <%= link_to 'New Market', new_market_path %>
-
-<script>
-<<<<<<< HEAD
-
-$(document).ready(function(){
-  var map = L.map('map').setView([26.128807, -80.14497], 13);
-
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mjesuele.medcme14',
-    accessToken: 'pk.eyJ1IjoibWplc3VlbGUiLCJhIjoiYWNlMTk1OTUwMzg4ZjNiODhjZWQwMzY5MWY2NWQwZTUifQ.7g81IuO6O_VQ1RMumb4sRg#3/0.00/0.00'
-  }).addTo(map);
-
-  $.get('/markets.json', function(markets) {
-    // var marker = L.marker([51.5, -0.09]).addTo(map);
-
-    
-  });
-});
-
-=======
-$(document).ready(function(){
-  handler = Gmaps.build('Google');
-  console.log(handler);
-  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-    markers = handler.addMarkers(<%=raw @hash.to_json %>);
-    handler.bounds.extendWith(markers);
-    handler.fitMapToBounds();
-  });
-
-  $('#search-form').submit(function(e) {
-    e.preventDefault();
-
-    var zip = $(e.target).find('#zip').val();
-    $.get('/markets/search/' + zip + '.json', function(data) {
-      console.log(data);
-    });
-
-    return false;
-  });
-
-});
->>>>>>> d8c301a0ba879b44a105188c15f93dcbcef5c0ce
-</script>
