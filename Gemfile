@@ -63,3 +63,5 @@ group :development, :test do
   gem 'httparty'
   gem 'nokogiri'
 end
+
+gem 'rails_12factor', group: :production
