@@ -27,7 +27,7 @@
       <% @vendors.each do |vendor| %>
         <%= link_to vendor do %>
           <li>
-          <%= image_tag vendor.thumbnail.url(:medium) %>  
+          <%= image_tag asset_path(vendor.thumbnail.url(:medium)) %>  
           <div class="vendor_overview">
             <h2><%= vendor.name %></h2>
           </div>
