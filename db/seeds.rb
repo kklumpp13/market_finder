@@ -64,8 +64,6 @@ vendors = [
     twitter: "#",
     instagram: "",
     product_id: 1,
-    thumbnail_file_name: asset_path("vendors/pastries.jpg"),
-    thumbnail_content_type: "image/jpeg"
   },
   {
 
@@ -79,8 +77,6 @@ vendors = [
     twitter: "",
     instagram: "",
     product_id: 2,
-    thumbnail_file_name: asset_path("vendors/gb.jpg"),
-    thumbnail_content_type: "image/jpeg",
   },
 ]
 
