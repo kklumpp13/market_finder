@@ -2,68 +2,86 @@
 <div class="vendor_show">
 
     <div class="wrapper_skinny vendor_show">
-
     <section class="vendor_profile">
       <article>
+        <div class="vendor_links">
+          <%= link_to 'Back', vendors_path %> 
+            <% if user_signed_in? && @vendor.user_id == current_user.id %>
+              | <%= link_to 'Edit Profile', edit_vendor_path(@vendor) %> |
+              <%= link_to 'Delete Profile', vendor_path, method: :delete, data: {confirm: "Are you sure?"} %>
+          <% end %> 
+        </div>  
         <h1><%= @vendor.name %></h1>
-        <p class="description"><%= simple_format(@vendor.description) %></p>
+        <div class="vendor-contact">
+          <ul class="contact-display">
+            <li>
+              <% unless @vendor.email.blank? %>
+                <%= link_to '<i class="fa fa-envelope-o"></i>'.html_safe, @vendor.email, title: "Email: #{@vendor.email}" %>
+              <% end %>
+            </li>
+            <li>
+              <% unless @vendor.phone.blank? %>
+                <%= link_to '<i class="fa fa-phone"></i>'.html_safe, @vendor.phone, title: "Phone: #{@vendor.phone}" %>
+              <% end %>
+            </li>
+            <li>
+              <% unless @vendor.facebook.blank? %>
+                <%= link_to '<i class="fa fa-facebook"></i>'.html_safe, "http://#{@vendor.facebook}", title: "Facebook: #{@vendor.facebook}" %>
+              <% end %>
+            </li>
+            <li>
+              <% unless @vendor.twitter.blank? %>
+                <%= link_to '<i class="fa fa-twitter"></i>'.html_safe, "http://#{@vendor.twitter}", title: "Twitter: #{@vendor.twitter}" %>
+              <% end %>
+            </li>
+            <li>
+              <% unless @vendor.instagram.blank? %>
+                <%= link_to '<i class="fa fa-instagram"></i>'.html_safe, "http://#{@vendor.instagram}", title: "Instagram: #{@vendor.instagram}" %>
+              <% end %>
+            </li>
+           </ul><br>
+        </div>
+        <div class="url-link">
+          <% unless @vendor.website.blank? %>
+           <%= link_to "http://#{@vendor.website}" %>
+          <% end %><br>
+        </div>
+        <p class="description"><%= simple_format(@vendor.description) %></p>    
+        <h4>You can find us at:</h4>
+        <% unless @vendor.markets.blank? %>
+          <% @vendor.markets.each do |market| %>
+            <p><%= market.name %></p> 
+          <% end %>
+        <% end %>
+        <h4>Upcoming Events</h4>
+        <% unless @vendor.date.blank? && @vendor.time.blank? %>
+          <%# @vendor.markets.each do |market| %>
+          <p><%=@vendor.date%>, <%= @vendor.time %> at <%= @vendor.markets.name %></p>
+          <%# end %>
+        <% end %>
+
+        
+        
+
         <% if current_user.nil? || !current_user.following?(@vendor) %>
           <%= link_to "Follow", follow_vendor_path(@vendor), class: "follow_button" %> 
         <% elsif current_user.following?(@vendor) %>
           <%= link_to "Unfollow", unfollow_vendor_path(@vendor), class: "follow_button" %>
         <% end %>
-        <p><i class="fa fa-users"></i> <%= @vendor.followers.size %> Followers</p>
-        <h2>Contact Us!</h2>
-        <% unless @vendor.email.blank? %>
-          <a href="<%= @vendor.email %>" class="contact_link">Email</a>
-        <% end %>
-        <% unless @vendor.phone.blank? %>
-          <a href="<%= @vendor.phone %>" class="contact_link">Phone</a>
-        <% end %>
-        <% unless @vendor.website.blank? %>
-          <a href="<%= @vendor.website %>" class="contact_link">Website</a>
-        <% end %>
-        <% unless @vendor.facebook.blank? %>
-          <a href="<%= @vendor.facebook %>" class="contact_link">Facebook</a>
-        <% end %>
-        <% unless @vendor.twitter.blank? %>
-          <a href="<%= @vendor.twitter %>" class="contact_link">Twitter</a>
-        <% end %>
-        <% unless @vendor.instagram.blank? %>
-          <a href="<%= @vendor.instagram %>" class="contact_link">Instagram</a>
-        <% end %><br>
-        <% unless @vendor.markets.blank? %>
-          <% @vendor.markets.each do |market| %>
-            <p><%= market.name %></p> 
-          <% end %>
-        <% end %><br>
-        <% unless @vendor.date.blank? %>
-          <p><%= @vendor.date %></p>
-        <% end %><br>
-        <% unless @vendor.time.blank? %>
-          <p><%= @vendor.time %></p>
-        <% end %><br>    
-         
-          
-       
-
-
+        
+        <!-- <p><i class="fa fa-users"></i> <%= @vendor.followers.size %> Followers</p>  -->  
       </article>
 
       <aside class="profile_pic">
       <% unless @vendor.thumbnail.blank? %>
         <%= image_tag @vendor.display_image %>
       <% end %><br>
-      </aside>
-  
-    </section>
-  
-      <%= link_to 'Back', vendors_path %> 
-      <% if user_signed_in? && @vendor.user_id == current_user.id %>
-        | <%= link_to 'Edit', edit_vendor_path(@vendor) %> |
-        <%= link_to 'Delete', vendor_path, method: :delete, data: {confirm: "Are you sure?"} %>
-      <% end %> 
 
+  
+           
+
+      </aside>  
+    </section>
 
            
     </div>
@@ -71,7 +89,6 @@
   </div>
 
 </div>
-
 
 
 

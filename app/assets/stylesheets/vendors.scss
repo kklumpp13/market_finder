@@ -108,54 +108,53 @@ position: relative;
 /* VENDOR SHOW                     */
 /*=================================*/
 
-/*.vendor_show {
-
-  display: inline;
-  float: left;
-}*/
-/*.vendor_info {
-  width: 50%;
-}*/
-
-/*.profile_pic {
-  float: right;
-}*/
-
-/*section {
-    width: 100%;
-
-    margin: auto;
-    padding: 10px;
-}
-.vendor_info {
-    width: 50%;
-   
-    float: left;
-}
-.profile_pic {
-    margin-left: 50%;
-    height: 200px;
-    border: 1px solid black;
-
-}*/
 
 section {
   @include outer-container;
-  article { @include span-columns(6);}
+  article { @include span-columns(6);
+            @include pad();}
   aside {@include span-columns(6);
-         @include omega();}
+         @include omega(); 
+        
+       }
 
 }
 
 
+.vendor_profile {
+  .vendor_links a {
+    color: black;
+    margin: 1px;
+  }
+  h1 {
+    margin-top: 0.67em;
+    margin-bottom: -.33em;
+  }
+  .contact-display {
+    margin-left: -2.4rem;
+  }
+  .contact-display li {
+  display: inline block;
+  float: left;
+  list-style: none;
+  i {
+    color: $dark;
+    margin-right: 1rem;   
+    &:hover {
+      color: $devise;
+      }
+    }
+  }
+  .url-link {
+  margin-top: .5rem;
+  a {
+    color: $devise;
+    text-decoration: none;
+  }  
+  }
+}
 
 
-/*section {
-  @include outer-container;
-  aside { @include span-columns(3); }
-  article { @include span-columns(9); 
-          @include omega();}
-}*/
 
 
 
