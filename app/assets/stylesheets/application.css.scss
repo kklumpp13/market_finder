@@ -312,18 +312,18 @@ textarea {
 
 
 
-@import "bourbon";  
-@import "neat";
-@import 'normalize';
-
-@import 'welcome';
-@import 'vendor_landing';
-@import 'customer_landing';
-@import 'vendors';
-@import 'about';
-@import "pickadate/classic";
-@import "pickadate/classic.date";
-@import "pickadate/classic.time";
+@import "bourbon",
+"neat",
+'normalize',
+'welcome',
+'vendor_landing',
+'customer_landing',
+'markets',
+'vendors',
+'about',
+"pickadate/classic",
+"pickadate/classic.date",
+"pickadate/classic.time";
 
 
 
