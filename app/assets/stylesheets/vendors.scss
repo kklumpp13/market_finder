@@ -109,14 +109,37 @@ position: relative;
 /*=================================*/
 
 
-section {
+.vendor_show {
   @include outer-container;
-  article { @include span-columns(6);
-            @include pad();}
-  aside {@include span-columns(6);
-         @include omega(); 
-        
+  @include clearfix;
+}
+
+.vendor_box_wrapper {
+  @include span-columns(10);
+  @include shift(1);
+
+}
+  article { 
+  @include span-columns(5 of 10);
+  @media all and (max-width: 1176px) {
+    @include span-columns(10 of 10);
+  }
+
+  }
+  
+  aside.profile-pic {
+  @include span-columns(5 of 10); 
+    @media all and (max-width: 1176px) {
+    @include span-columns(10 of 10);
+
+  }
        }
+.vendor-image {
+  margin-top: 25px;
+@media all and (max-width: 1176px) {
+  margin-top:70px;
+
+}
 
 }
 
