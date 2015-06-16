@@ -40,7 +40,7 @@ gem 'will_paginate', '~> 3.0.7'
 gem 'font-awesome-sass'
 gem 'friendly_id', '~> 5.1.0'
 gem "acts_as_follower"
-gem 'sprockets_better_errors'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -60,7 +60,6 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-
 end
 
 gem 'rails_12factor', group: :production
