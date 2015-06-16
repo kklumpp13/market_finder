@@ -52,7 +52,7 @@
 
       <aside class="profile_pic">
       <% unless @vendor.thumbnail.blank? %>
-        <%= image_tag @vendor.thumbnail.url(:medium) %>
+        <%= image_tag @vendor.display_image %>
       <% end %><br>
       </aside>
   
