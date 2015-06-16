@@ -10,4 +10,7 @@ class Vendor < ActiveRecord::Base
   extend FriendlyId
   friendly_id :name, use: :slugged
 
+  def display_image
+    thumbnail.url(:medium)
+  end
 end
