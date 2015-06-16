@@ -148,7 +148,7 @@ margin: 0 auto;
   color: $white;
   transition: background .4s ease-in-out;
   &:hover {
-    background: darken($white, 7.5%);
+    background: darken($home, 7.5%);
   }
 }
 
