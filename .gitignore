@@ -12,5 +12,6 @@
 !/log/.keep
 /tmp
 mfd-*
+pg-*sql*
 .env
 .envrc
