@@ -33,7 +33,7 @@ gem 'pickadate-rails'
 
 gem 'bourbon'
 gem 'neat', '~> 1.7.2'
-gem 'leaflet-rails'
+gem "leaflet-rails"
 gem 'bootstrap-sass', '~> 3.3.4.1'
 gem 'nokogiri'
 gem 'will_paginate', '~> 3.0.7'
