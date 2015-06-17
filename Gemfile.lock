@@ -94,6 +94,9 @@ GEM
       mime-types (~> 1.15)
       posix-spawn (~> 0.3.6)
     hirb (0.7.3)
+    httparty (0.13.5)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     jazz_fingers (2.0.0)
       awesome_print (~> 1.6)
@@ -125,6 +128,7 @@ GEM
     mini_portile (0.6.2)
     minitest (5.7.0)
     multi_json (1.11.1)
+    multi_xml (0.5.5)
     neat (1.7.2)
       bourbon (>= 4.0)
       sass (>= 3.3)
@@ -249,6 +253,7 @@ DEPENDENCIES
   font-awesome-sass
   friendly_id (~> 5.1.0)
   geocoder
+  httparty
   jazz_fingers
   jbuilder (~> 2.0)
   jquery-rails
