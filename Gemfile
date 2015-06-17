@@ -26,6 +26,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'devise'
 
+gem 'httparty'
+
 gem 'geocoder'
 gem 'zip-codes'
 gem "paperclip", "~> 4.2"
