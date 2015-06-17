@@ -7,7 +7,7 @@
 <div id="map"></div>
 
 <form id='map-form'>
-  <input type='text' name='zip' placeholder='ZIP Code'>
+  <input type='text' name='zip' placeholder='Zip Code'>
   <input type='submit' value='Search'>
 </form>
 
@@ -41,7 +41,7 @@
 
 <script>
 $(document).ready(function(){
-  var map = L.map('map').setView([26.128807, -80.14497], 13),
+  var map = L.map('map').setView([26.128807, -80.14497], 9),
       markers = L.layerGroup();
   
   markers.addTo(map);
@@ -114,6 +114,7 @@ $(document).ready(function(){
       .text(err.message)
       .show();
   }
+
   function searchForZip(zip) {
     var url = '/markets/search/' + zip + '.json';
     $.ajax({

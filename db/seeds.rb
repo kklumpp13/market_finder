@@ -5,24 +5,24 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-# require_relative('farm_addy.rb')
+require_relative('farm_addy.rb')
 
-# data = $data.compact.map do |mkt|
-#   if mkt[:address]
-#     zip = mkt[:address][-5..-1]
-#     street = mkt[:address].split(/,|;/).first
-#   end
+data = $data.compact.map do |mkt|
+  if mkt[:address]
+    zip = mkt[:address][-5..-1]
+    street = mkt[:address].split(/,|;/).first
+  end
 
-#   {
-#     name: mkt[:name],
-#     zip: zip,
-#     address: street
-#   }
-# end
+  {
+    name: mkt[:name],
+    zip: zip,
+    address: street
+  }
+end
 
-# pp data
+pp data
 
-# p Market.create(data)
+p Market.create(data)
 
 
  products = [{
@@ -45,11 +45,11 @@
 
 
 
-# products.each do |product_params|
-#   Product.find_or_create_by(product_params)
-# end
+products.each do |product_params|
+  Product.find_or_create_by(product_params)
+end
 
-# p " The products are:#{Product.all.inspect}"
+p " The products are:#{Product.all.inspect}"
 
 
 vendors = [
