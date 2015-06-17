@@ -1,31 +1,52 @@
 <%# vendor profile page%>
+<div id="banner" class="vendors_banner">
+</div>
+
+
+<div id="vendors" class="cf">
+   <div class="wrapper">
 
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @market.name %>
-</p>
+<div>
+<h2><%= @market.name %><h2>
+</div>
 
 <p>
-  <strong>Address:</strong>
+  <strong>Market Address:</strong>
   <%= @market.address %>
 </p>
 
 <p>
-  <strong>Zip:</strong>
+  <strong>Market Zip:</strong>
   <%= @market.zip %>
 </p>
 
 <section class='vendors'>
-  <h2>Vendors</h2>
-
-  <% @market.vendors.each do |vendor| %>
-    <section class='vendor'>
-      <h3><%= vendor.name %></h3>
-    </section>
-  <% end %>
+  <h4><%= @market.name %>'s Vendors</h4>
+    <ul class="cf">
+      <% @market.vendors.each do |vendor| %>
+        <%= link_to vendor do %>
+          <li>
+          <%= image_tag vendor.display_image %>  
+          <div class="vendor_overview">
+            <h2><%= vendor.name %></h2>
+          </div>
+        </li>
+        <% end %>
+      <% end %>
+    </ul> 
 </section>
 
-<%= link_to 'Edit', edit_market_path(@market) %> |
-<%= link_to 'Back', markets_path %>
+<% if user_signed_in? && @vendor.user_id == current_user.id %>
+    | <%= link_to 'Edit Market', edit_vendor_path(@vendor) %> |
+    <%= link_to 'Delete Market', vendor_path, method: :delete, data: {confirm: "Are you sure?"} %>
+<% end %> 
+
+
+   </div>
+ </div>
+
+
+
+ 
