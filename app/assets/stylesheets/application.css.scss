@@ -1,11 +1,24 @@
-$white: #FFFFFF;
-$highlight: #DA5A36;
-$dark: #22292e;
-$light: #EDEFF5;
-$devise: #DC2031;
-$merchant: #C13213;
-$cherry: #950B42;
-$home: #749730;
+@import "colors";
+@import "bourbon";
+@import "grid-settings";
+@import "neat";
+@import 'normalize';
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "leaflet";
+@import 'welcome';
+@import 'vendor_landing';
+@import 'customer_landing';
+@import 'vendors';
+@import 'about';
+@import "pickadate/classic";
+@import "pickadate/classic.date";
+@import "pickadate/classic.time";
+@import "markets";
+
+
+
+
 
 
 
@@ -313,21 +326,6 @@ textarea {
 
 
 
-@import "bourbon";
-@import "grid-settings";
-@import "neat";
-@import 'normalize';
-@import "font-awesome-sprockets";
-@import "font-awesome";
-@import 'welcome';
-@import 'vendor_landing';
-@import 'customer_landing';
-@import 'vendors';
-@import 'about';
-@import "pickadate/classic";
-@import "pickadate/classic.date";
-@import "pickadate/classic.time";
-@import "markets";
 
 
 
