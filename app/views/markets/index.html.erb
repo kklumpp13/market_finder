@@ -1,14 +1,15 @@
 <%#page that map appears%>
-
+<div id="vendors" class="cf">
+   <div class="wrapper">
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Markets</h1>
+<h1>Find your nearest market</h1>
 
 <div id="map"></div>
 
-<form id='map-form'>
-  <input type='text' name='zip' placeholder='Zip Code'>
-  <input type='submit' value='Search'>
+<form id='map-form'><br>
+  <input type='text' name='zip' placeholder='Zip Code'><br><br>
+  <input type='submit' value='Search'><br>
 </form>
 
 <div class='error'>
@@ -16,7 +17,7 @@
 
 <table class='market-table'>
   <thead>
-    <tr>
+    <tr class="market-column">
       <th>Name</th>
       <th>Address</th>
       <th>Zip</th>
@@ -131,3 +132,5 @@ $(document).ready(function(){
   }
 });
 </script>
+</div>
+</div>
