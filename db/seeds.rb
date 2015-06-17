@@ -54,7 +54,6 @@ p " The products are:#{Product.all.inspect}"
 
 vendors = [
   {
-    id: 1,
     name: "Krystal's Jewelry",
     description: "Liquorice macaroon pastry jelly sweet roll pastry....",
     email: "test@test.com",
@@ -67,7 +66,6 @@ vendors = [
   },
   {
 
-    id: 2,
     name: "Green Beans & Co.",
     description: "Liquorice macaroon pastry jelly sweet roll pastry....",
     email: "test@test.com",

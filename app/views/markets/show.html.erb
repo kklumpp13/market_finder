@@ -17,5 +17,15 @@
   <%= @market.zip %>
 </p>
 
+<section class='vendors'>
+  <h2>Vendors</h2>
+
+  <% @market.vendors.each do |vendor| %>
+    <section class='vendor'>
+      <h3><%= vendor.name %></h3>
+    </section>
+  <% end %>
+</section>
+
 <%= link_to 'Edit', edit_market_path(@market) %> |
 <%= link_to 'Back', markets_path %>

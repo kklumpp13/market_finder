@@ -7,13 +7,7 @@ class MarketsController < ApplicationController
     @markets = Market.all
     respond_to do |format|
       format.html { render :index }
-      format.json do
-        json = []
-        @markets.each do |mkt|
-          json << mkt.to_json({methods: [:latitude, :longitude]})
-        end
-        render json: json
-      end
+      format.json { render json: @markets }
     end
   end
 
