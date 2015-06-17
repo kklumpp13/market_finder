@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  console.log("Load market JS script");
   var map = L.map('map').setView([26.128807, -80.14497], 9),
       markers = L.layerGroup();
   
