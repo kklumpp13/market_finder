@@ -13,10 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require pickadate/picker 
-//= require pickadate/picker.date 
-//= require pickadate/picker.time 
+//= require pickadate/picker
+//= require pickadate/picker.date
+//= require pickadate/picker.time
 //= require jquery.turbolinks
 //= require turbolinks
-//= require leaflet
 //= require_tree .
