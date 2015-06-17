@@ -1,4 +1,7 @@
 class Vendor < ActiveRecord::Base
+
+  # This is a useless addition.
+
   belongs_to :product
   has_and_belongs_to_many :markets
   belongs_to :user
