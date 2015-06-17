@@ -1,7 +1,6 @@
 
 <div class="vendor_show">
-
-    <div class="wrapper_skinny vendor_show">
+    <div class="vendor_box_wrapper">
     <section class="vendor_profile">
       <article>
         <div class="vendor_links">
@@ -74,7 +73,7 @@
 
       <aside class="profile_pic">
       <% unless @vendor.thumbnail.blank? %>
-        <%= image_tag @vendor.display_image %>
+        <%= image_tag @vendor.display_image, class: "vendor-image" %>
       <% end %><br>
 
   
