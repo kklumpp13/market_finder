@@ -25,16 +25,20 @@
 <section class='vendors'>
   <h4><%= @market.name %>'s Vendors</h4>
     <ul class="cf">
-      <% @market.vendors.each do |vendor| %>
-        <%= link_to vendor do %>
-          <li>
-          <%= image_tag vendor.display_image %>  
-          <div class="vendor_overview">
-            <h2><%= vendor.name %></h2>
-          </div>
-        </li>
+      <% if @market.vendors.empty? %>
+        <h3><%= "We don't have any Vendors associated to this Market at this time" %></h3>
+      <% else %>
+        <% @market.vendors.each do |vendor| %>
+          <%= link_to vendor do %>
+            <li>
+            <%= image_tag vendor.display_image %>  
+            <div class="vendor_overview">
+              <h2><%= vendor.name %></h2>
+            </div>
+          </li>
+          <% end %>
         <% end %>
-      <% end %>
+        <% end %>
     </ul> 
 </section>
 </div>
@@ -43,4 +47,5 @@
 
 
 
- 
+
+  
