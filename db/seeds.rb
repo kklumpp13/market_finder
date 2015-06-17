@@ -54,7 +54,6 @@ p " The products are:#{Product.all.inspect}"
 
 vendors = [
   {
-    id: 1,
     name: "Krystal's Jewelry",
     description: "Liquorice macaroon pastry jelly sweet roll pastry....",
     email: "test@test.com",
@@ -67,7 +66,6 @@ vendors = [
   },
   {
 
-    id: 2,
     name: "Green Beans & Co.",
     description: "Liquorice macaroon pastry jelly sweet roll pastry....",
     email: "test@test.com",
@@ -81,7 +79,7 @@ vendors = [
 ]
 
 vendors.each do |vendor_params|
-  Vendor.find_or_create_by(vendor_params)
+  Market.first.vendors.create(vendor_params)
 end
 
 # Name images for vendors vendor_1.jpg and put them in app/assets/images/vendors/
