@@ -6,7 +6,7 @@
           <ul>
             <% unless user_signed_in? %>
               <li><%= link_to "Explore", welcome_customer_landing_path %></li>
-              <li><%= link_to "Merchant Sign In", new_user_session_path %></li>
+              <li><%= link_to "Sign In", new_user_session_path %></li>
               <li><%= link_to "About", welcome_about_path %></li>
             <% else %>
               <li><%= link_to "Explore", welcome_customer_landing_path %></li>
