@@ -1,0 +1,5476 @@
+@charset "UTF-8";
+/*$small: 480px;
+$medium: 768px;
+$large: 1200px;
+
+// Define your breakpoints
+$tablet: new-breakpoint(min-width 768px 8);
+$mobile: new-breakpoint(min-width 480px 3);
+*/
+/*$visual-grid: true !global;*/
+/* line 4, /usr/local/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, /usr/local/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 77, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 97, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 117, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 161, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 169, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 173, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 370, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 424, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/normalize.css.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*!
+ *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("/assets/font-awesome/fontawesome-webfont-cbb644d0ee730ea57dd5fbae35ef5ba4a41d57a254a6b1215de5c9ff8a321c2d.eot");
+  src: url("/assets/font-awesome/fontawesome-webfont-cbb644d0ee730ea57dd5fbae35ef5ba4a41d57a254a6b1215de5c9ff8a321c2d.eot?#iefix") format("embedded-opentype"), url("/assets/font-awesome/fontawesome-webfont-aadc3580d2b64ff5a7e6f1425587db4e8b033efcbf8f5c332ca52a5ed580c87c.woff2") format("woff2"), url("/assets/font-awesome/fontawesome-webfont-e3870de89716b72cb61a4bba0e17c75783b361cdaba35ea96961c3070bd8ca18.woff") format("woff"), url("/assets/font-awesome/fontawesome-webfont-9e540a087924a6e64790149d735cac022640e4fa6bff6bd65f5e9f41529bf0b3.ttf") format("truetype"), url("/assets/font-awesome/fontawesome-webfont-bfdef833219a6edffd9c3cbc28db72739d22bb4d20cc2e2f8d56a7a4d408a206.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 4, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_core.scss */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+/* makes the font 33% larger relative to the icon container */
+/* line 5, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_larger.scss */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+/* line 10, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_larger.scss */
+.fa-2x {
+  font-size: 2em;
+}
+
+/* line 11, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_larger.scss */
+.fa-3x {
+  font-size: 3em;
+}
+
+/* line 12, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_larger.scss */
+.fa-4x {
+  font-size: 4em;
+}
+
+/* line 13, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_larger.scss */
+.fa-5x {
+  font-size: 5em;
+}
+
+/* line 3, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_fixed-width.scss */
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+
+/* line 4, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_list.scss */
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+/* line 8, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_list.scss */
+.fa-ul > li {
+  position: relative;
+}
+
+/* line 10, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_list.scss */
+.fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+/* line 16, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_list.scss */
+.fa-li.fa-lg {
+  left: -1.85714286em;
+}
+
+/* line 4, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_bordered-pulled.scss */
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eee;
+  border-radius: .1em;
+}
+
+/* line 10, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_bordered-pulled.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 11, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_bordered-pulled.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 14, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_bordered-pulled.scss */
+.fa.pull-left {
+  margin-right: .3em;
+}
+/* line 15, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_bordered-pulled.scss */
+.fa.pull-right {
+  margin-left: .3em;
+}
+
+/* line 4, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_animated.scss */
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+/* line 9, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_animated.scss */
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/* line 4, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_rotated-flipped.scss */
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 5, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_rotated-flipped.scss */
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 6, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_rotated-flipped.scss */
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/* line 8, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_rotated-flipped.scss */
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+/* line 9, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_rotated-flipped.scss */
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+/* line 14, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_rotated-flipped.scss */
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  filter: none;
+}
+
+/* line 4, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_stacked.scss */
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+/* line 12, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_stacked.scss */
+.fa-stack-1x, .fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 18, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_stacked.scss */
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+/* line 19, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_stacked.scss */
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+/* line 20, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_stacked.scss */
+.fa-inverse {
+  color: #fff;
+}
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+/* line 4, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-glass:before {
+  content: "";
+}
+
+/* line 5, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-music:before {
+  content: "";
+}
+
+/* line 6, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-search:before {
+  content: "";
+}
+
+/* line 7, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-envelope-o:before {
+  content: "";
+}
+
+/* line 8, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-heart:before {
+  content: "";
+}
+
+/* line 9, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-star:before {
+  content: "";
+}
+
+/* line 10, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-star-o:before {
+  content: "";
+}
+
+/* line 11, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-user:before {
+  content: "";
+}
+
+/* line 12, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-film:before {
+  content: "";
+}
+
+/* line 13, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-th-large:before {
+  content: "";
+}
+
+/* line 14, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-th:before {
+  content: "";
+}
+
+/* line 15, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-th-list:before {
+  content: "";
+}
+
+/* line 16, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-check:before {
+  content: "";
+}
+
+/* line 17, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
+  content: "";
+}
+
+/* line 20, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-search-plus:before {
+  content: "";
+}
+
+/* line 21, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-search-minus:before {
+  content: "";
+}
+
+/* line 22, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-power-off:before {
+  content: "";
+}
+
+/* line 23, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-signal:before {
+  content: "";
+}
+
+/* line 24, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-gear:before,
+.fa-cog:before {
+  content: "";
+}
+
+/* line 26, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-trash-o:before {
+  content: "";
+}
+
+/* line 27, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-home:before {
+  content: "";
+}
+
+/* line 28, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-file-o:before {
+  content: "";
+}
+
+/* line 29, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-clock-o:before {
+  content: "";
+}
+
+/* line 30, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-road:before {
+  content: "";
+}
+
+/* line 31, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-download:before {
+  content: "";
+}
+
+/* line 32, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-arrow-circle-o-down:before {
+  content: "";
+}
+
+/* line 33, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-arrow-circle-o-up:before {
+  content: "";
+}
+
+/* line 34, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-inbox:before {
+  content: "";
+}
+
+/* line 35, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-play-circle-o:before {
+  content: "";
+}
+
+/* line 36, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: "";
+}
+
+/* line 38, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-refresh:before {
+  content: "";
+}
+
+/* line 39, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-list-alt:before {
+  content: "";
+}
+
+/* line 40, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-lock:before {
+  content: "";
+}
+
+/* line 41, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-flag:before {
+  content: "";
+}
+
+/* line 42, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-headphones:before {
+  content: "";
+}
+
+/* line 43, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-volume-off:before {
+  content: "";
+}
+
+/* line 44, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-volume-down:before {
+  content: "";
+}
+
+/* line 45, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-volume-up:before {
+  content: "";
+}
+
+/* line 46, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-qrcode:before {
+  content: "";
+}
+
+/* line 47, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-barcode:before {
+  content: "";
+}
+
+/* line 48, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-tag:before {
+  content: "";
+}
+
+/* line 49, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-tags:before {
+  content: "";
+}
+
+/* line 50, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-book:before {
+  content: "";
+}
+
+/* line 51, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-bookmark:before {
+  content: "";
+}
+
+/* line 52, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-print:before {
+  content: "";
+}
+
+/* line 53, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-camera:before {
+  content: "";
+}
+
+/* line 54, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-font:before {
+  content: "";
+}
+
+/* line 55, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-bold:before {
+  content: "";
+}
+
+/* line 56, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-italic:before {
+  content: "";
+}
+
+/* line 57, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-text-height:before {
+  content: "";
+}
+
+/* line 58, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-text-width:before {
+  content: "";
+}
+
+/* line 59, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-align-left:before {
+  content: "";
+}
+
+/* line 60, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-align-center:before {
+  content: "";
+}
+
+/* line 61, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-align-right:before {
+  content: "";
+}
+
+/* line 62, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-align-justify:before {
+  content: "";
+}
+
+/* line 63, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-list:before {
+  content: "";
+}
+
+/* line 64, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-dedent:before,
+.fa-outdent:before {
+  content: "";
+}
+
+/* line 66, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-indent:before {
+  content: "";
+}
+
+/* line 67, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-video-camera:before {
+  content: "";
+}
+
+/* line 68, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-photo:before,
+.fa-image:before,
+.fa-picture-o:before {
+  content: "";
+}
+
+/* line 71, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-pencil:before {
+  content: "";
+}
+
+/* line 72, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-map-marker:before {
+  content: "";
+}
+
+/* line 73, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-adjust:before {
+  content: "";
+}
+
+/* line 74, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-tint:before {
+  content: "";
+}
+
+/* line 75, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: "";
+}
+
+/* line 77, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-share-square-o:before {
+  content: "";
+}
+
+/* line 78, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-check-square-o:before {
+  content: "";
+}
+
+/* line 79, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-arrows:before {
+  content: "";
+}
+
+/* line 80, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-step-backward:before {
+  content: "";
+}
+
+/* line 81, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-fast-backward:before {
+  content: "";
+}
+
+/* line 82, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-backward:before {
+  content: "";
+}
+
+/* line 83, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-play:before {
+  content: "";
+}
+
+/* line 84, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-pause:before {
+  content: "";
+}
+
+/* line 85, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-stop:before {
+  content: "";
+}
+
+/* line 86, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-forward:before {
+  content: "";
+}
+
+/* line 87, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-fast-forward:before {
+  content: "";
+}
+
+/* line 88, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-step-forward:before {
+  content: "";
+}
+
+/* line 89, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-eject:before {
+  content: "";
+}
+
+/* line 90, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-chevron-left:before {
+  content: "";
+}
+
+/* line 91, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-chevron-right:before {
+  content: "";
+}
+
+/* line 92, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-plus-circle:before {
+  content: "";
+}
+
+/* line 93, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-minus-circle:before {
+  content: "";
+}
+
+/* line 94, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-times-circle:before {
+  content: "";
+}
+
+/* line 95, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-check-circle:before {
+  content: "";
+}
+
+/* line 96, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-question-circle:before {
+  content: "";
+}
+
+/* line 97, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-info-circle:before {
+  content: "";
+}
+
+/* line 98, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-crosshairs:before {
+  content: "";
+}
+
+/* line 99, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-times-circle-o:before {
+  content: "";
+}
+
+/* line 100, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-check-circle-o:before {
+  content: "";
+}
+
+/* line 101, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-ban:before {
+  content: "";
+}
+
+/* line 102, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-arrow-left:before {
+  content: "";
+}
+
+/* line 103, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-arrow-right:before {
+  content: "";
+}
+
+/* line 104, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-arrow-up:before {
+  content: "";
+}
+
+/* line 105, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-arrow-down:before {
+  content: "";
+}
+
+/* line 106, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-mail-forward:before,
+.fa-share:before {
+  content: "";
+}
+
+/* line 108, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-expand:before {
+  content: "";
+}
+
+/* line 109, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-compress:before {
+  content: "";
+}
+
+/* line 110, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-plus:before {
+  content: "";
+}
+
+/* line 111, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-minus:before {
+  content: "";
+}
+
+/* line 112, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-asterisk:before {
+  content: "";
+}
+
+/* line 113, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-exclamation-circle:before {
+  content: "";
+}
+
+/* line 114, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-gift:before {
+  content: "";
+}
+
+/* line 115, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-leaf:before {
+  content: "";
+}
+
+/* line 116, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-fire:before {
+  content: "";
+}
+
+/* line 117, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-eye:before {
+  content: "";
+}
+
+/* line 118, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-eye-slash:before {
+  content: "";
+}
+
+/* line 119, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: "";
+}
+
+/* line 121, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-plane:before {
+  content: "";
+}
+
+/* line 122, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-calendar:before {
+  content: "";
+}
+
+/* line 123, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-random:before {
+  content: "";
+}
+
+/* line 124, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-comment:before {
+  content: "";
+}
+
+/* line 125, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-magnet:before {
+  content: "";
+}
+
+/* line 126, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-chevron-up:before {
+  content: "";
+}
+
+/* line 127, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-chevron-down:before {
+  content: "";
+}
+
+/* line 128, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-retweet:before {
+  content: "";
+}
+
+/* line 129, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-shopping-cart:before {
+  content: "";
+}
+
+/* line 130, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-folder:before {
+  content: "";
+}
+
+/* line 131, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-folder-open:before {
+  content: "";
+}
+
+/* line 132, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-arrows-v:before {
+  content: "";
+}
+
+/* line 133, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-arrows-h:before {
+  content: "";
+}
+
+/* line 134, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-bar-chart-o:before,
+.fa-bar-chart:before {
+  content: "";
+}
+
+/* line 136, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-twitter-square:before {
+  content: "";
+}
+
+/* line 137, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-facebook-square:before {
+  content: "";
+}
+
+/* line 138, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-camera-retro:before {
+  content: "";
+}
+
+/* line 139, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-key:before {
+  content: "";
+}
+
+/* line 140, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-gears:before,
+.fa-cogs:before {
+  content: "";
+}
+
+/* line 142, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-comments:before {
+  content: "";
+}
+
+/* line 143, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-thumbs-o-up:before {
+  content: "";
+}
+
+/* line 144, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-thumbs-o-down:before {
+  content: "";
+}
+
+/* line 145, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-star-half:before {
+  content: "";
+}
+
+/* line 146, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-heart-o:before {
+  content: "";
+}
+
+/* line 147, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-sign-out:before {
+  content: "";
+}
+
+/* line 148, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-linkedin-square:before {
+  content: "";
+}
+
+/* line 149, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-thumb-tack:before {
+  content: "";
+}
+
+/* line 150, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-external-link:before {
+  content: "";
+}
+
+/* line 151, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-sign-in:before {
+  content: "";
+}
+
+/* line 152, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-trophy:before {
+  content: "";
+}
+
+/* line 153, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-github-square:before {
+  content: "";
+}
+
+/* line 154, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-upload:before {
+  content: "";
+}
+
+/* line 155, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-lemon-o:before {
+  content: "";
+}
+
+/* line 156, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-phone:before {
+  content: "";
+}
+
+/* line 157, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-square-o:before {
+  content: "";
+}
+
+/* line 158, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-bookmark-o:before {
+  content: "";
+}
+
+/* line 159, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-phone-square:before {
+  content: "";
+}
+
+/* line 160, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-twitter:before {
+  content: "";
+}
+
+/* line 161, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-facebook-f:before,
+.fa-facebook:before {
+  content: "";
+}
+
+/* line 163, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-github:before {
+  content: "";
+}
+
+/* line 164, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-unlock:before {
+  content: "";
+}
+
+/* line 165, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-credit-card:before {
+  content: "";
+}
+
+/* line 166, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-rss:before {
+  content: "";
+}
+
+/* line 167, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-hdd-o:before {
+  content: "";
+}
+
+/* line 168, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-bullhorn:before {
+  content: "";
+}
+
+/* line 169, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-bell:before {
+  content: "";
+}
+
+/* line 170, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-certificate:before {
+  content: "";
+}
+
+/* line 171, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-hand-o-right:before {
+  content: "";
+}
+
+/* line 172, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-hand-o-left:before {
+  content: "";
+}
+
+/* line 173, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-hand-o-up:before {
+  content: "";
+}
+
+/* line 174, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-hand-o-down:before {
+  content: "";
+}
+
+/* line 175, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-arrow-circle-left:before {
+  content: "";
+}
+
+/* line 176, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-arrow-circle-right:before {
+  content: "";
+}
+
+/* line 177, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-arrow-circle-up:before {
+  content: "";
+}
+
+/* line 178, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-arrow-circle-down:before {
+  content: "";
+}
+
+/* line 179, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-globe:before {
+  content: "";
+}
+
+/* line 180, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-wrench:before {
+  content: "";
+}
+
+/* line 181, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-tasks:before {
+  content: "";
+}
+
+/* line 182, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-filter:before {
+  content: "";
+}
+
+/* line 183, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-briefcase:before {
+  content: "";
+}
+
+/* line 184, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-arrows-alt:before {
+  content: "";
+}
+
+/* line 185, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-group:before,
+.fa-users:before {
+  content: "";
+}
+
+/* line 187, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-chain:before,
+.fa-link:before {
+  content: "";
+}
+
+/* line 189, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-cloud:before {
+  content: "";
+}
+
+/* line 190, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-flask:before {
+  content: "";
+}
+
+/* line 191, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-cut:before,
+.fa-scissors:before {
+  content: "";
+}
+
+/* line 193, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-copy:before,
+.fa-files-o:before {
+  content: "";
+}
+
+/* line 195, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-paperclip:before {
+  content: "";
+}
+
+/* line 196, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-save:before,
+.fa-floppy-o:before {
+  content: "";
+}
+
+/* line 198, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-square:before {
+  content: "";
+}
+
+/* line 199, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  content: "";
+}
+
+/* line 202, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-list-ul:before {
+  content: "";
+}
+
+/* line 203, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-list-ol:before {
+  content: "";
+}
+
+/* line 204, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-strikethrough:before {
+  content: "";
+}
+
+/* line 205, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-underline:before {
+  content: "";
+}
+
+/* line 206, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-table:before {
+  content: "";
+}
+
+/* line 207, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-magic:before {
+  content: "";
+}
+
+/* line 208, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-truck:before {
+  content: "";
+}
+
+/* line 209, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-pinterest:before {
+  content: "";
+}
+
+/* line 210, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-pinterest-square:before {
+  content: "";
+}
+
+/* line 211, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-google-plus-square:before {
+  content: "";
+}
+
+/* line 212, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-google-plus:before {
+  content: "";
+}
+
+/* line 213, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-money:before {
+  content: "";
+}
+
+/* line 214, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-caret-down:before {
+  content: "";
+}
+
+/* line 215, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-caret-up:before {
+  content: "";
+}
+
+/* line 216, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-caret-left:before {
+  content: "";
+}
+
+/* line 217, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-caret-right:before {
+  content: "";
+}
+
+/* line 218, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-columns:before {
+  content: "";
+}
+
+/* line 219, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-unsorted:before,
+.fa-sort:before {
+  content: "";
+}
+
+/* line 221, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-sort-down:before,
+.fa-sort-desc:before {
+  content: "";
+}
+
+/* line 223, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-sort-up:before,
+.fa-sort-asc:before {
+  content: "";
+}
+
+/* line 225, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-envelope:before {
+  content: "";
+}
+
+/* line 226, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-linkedin:before {
+  content: "";
+}
+
+/* line 227, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: "";
+}
+
+/* line 229, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-legal:before,
+.fa-gavel:before {
+  content: "";
+}
+
+/* line 231, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: "";
+}
+
+/* line 233, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-comment-o:before {
+  content: "";
+}
+
+/* line 234, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-comments-o:before {
+  content: "";
+}
+
+/* line 235, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-flash:before,
+.fa-bolt:before {
+  content: "";
+}
+
+/* line 237, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-sitemap:before {
+  content: "";
+}
+
+/* line 238, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-umbrella:before {
+  content: "";
+}
+
+/* line 239, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-paste:before,
+.fa-clipboard:before {
+  content: "";
+}
+
+/* line 241, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-lightbulb-o:before {
+  content: "";
+}
+
+/* line 242, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-exchange:before {
+  content: "";
+}
+
+/* line 243, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-cloud-download:before {
+  content: "";
+}
+
+/* line 244, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-cloud-upload:before {
+  content: "";
+}
+
+/* line 245, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-user-md:before {
+  content: "";
+}
+
+/* line 246, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-stethoscope:before {
+  content: "";
+}
+
+/* line 247, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-suitcase:before {
+  content: "";
+}
+
+/* line 248, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-bell-o:before {
+  content: "";
+}
+
+/* line 249, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-coffee:before {
+  content: "";
+}
+
+/* line 250, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-cutlery:before {
+  content: "";
+}
+
+/* line 251, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-file-text-o:before {
+  content: "";
+}
+
+/* line 252, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-building-o:before {
+  content: "";
+}
+
+/* line 253, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-hospital-o:before {
+  content: "";
+}
+
+/* line 254, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-ambulance:before {
+  content: "";
+}
+
+/* line 255, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-medkit:before {
+  content: "";
+}
+
+/* line 256, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-fighter-jet:before {
+  content: "";
+}
+
+/* line 257, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-beer:before {
+  content: "";
+}
+
+/* line 258, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-h-square:before {
+  content: "";
+}
+
+/* line 259, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-plus-square:before {
+  content: "";
+}
+
+/* line 260, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-angle-double-left:before {
+  content: "";
+}
+
+/* line 261, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-angle-double-right:before {
+  content: "";
+}
+
+/* line 262, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-angle-double-up:before {
+  content: "";
+}
+
+/* line 263, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-angle-double-down:before {
+  content: "";
+}
+
+/* line 264, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-angle-left:before {
+  content: "";
+}
+
+/* line 265, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-angle-right:before {
+  content: "";
+}
+
+/* line 266, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-angle-up:before {
+  content: "";
+}
+
+/* line 267, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-angle-down:before {
+  content: "";
+}
+
+/* line 268, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-desktop:before {
+  content: "";
+}
+
+/* line 269, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-laptop:before {
+  content: "";
+}
+
+/* line 270, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-tablet:before {
+  content: "";
+}
+
+/* line 271, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "";
+}
+
+/* line 273, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-circle-o:before {
+  content: "";
+}
+
+/* line 274, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-quote-left:before {
+  content: "";
+}
+
+/* line 275, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-quote-right:before {
+  content: "";
+}
+
+/* line 276, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-spinner:before {
+  content: "";
+}
+
+/* line 277, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-circle:before {
+  content: "";
+}
+
+/* line 278, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: "";
+}
+
+/* line 280, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-github-alt:before {
+  content: "";
+}
+
+/* line 281, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-folder-o:before {
+  content: "";
+}
+
+/* line 282, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-folder-open-o:before {
+  content: "";
+}
+
+/* line 283, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-smile-o:before {
+  content: "";
+}
+
+/* line 284, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-frown-o:before {
+  content: "";
+}
+
+/* line 285, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-meh-o:before {
+  content: "";
+}
+
+/* line 286, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-gamepad:before {
+  content: "";
+}
+
+/* line 287, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-keyboard-o:before {
+  content: "";
+}
+
+/* line 288, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-flag-o:before {
+  content: "";
+}
+
+/* line 289, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-flag-checkered:before {
+  content: "";
+}
+
+/* line 290, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-terminal:before {
+  content: "";
+}
+
+/* line 291, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-code:before {
+  content: "";
+}
+
+/* line 292, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
+  content: "";
+}
+
+/* line 294, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: "";
+}
+
+/* line 297, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-location-arrow:before {
+  content: "";
+}
+
+/* line 298, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-crop:before {
+  content: "";
+}
+
+/* line 299, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-code-fork:before {
+  content: "";
+}
+
+/* line 300, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: "";
+}
+
+/* line 302, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-question:before {
+  content: "";
+}
+
+/* line 303, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-info:before {
+  content: "";
+}
+
+/* line 304, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-exclamation:before {
+  content: "";
+}
+
+/* line 305, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-superscript:before {
+  content: "";
+}
+
+/* line 306, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-subscript:before {
+  content: "";
+}
+
+/* line 307, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-eraser:before {
+  content: "";
+}
+
+/* line 308, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-puzzle-piece:before {
+  content: "";
+}
+
+/* line 309, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-microphone:before {
+  content: "";
+}
+
+/* line 310, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-microphone-slash:before {
+  content: "";
+}
+
+/* line 311, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-shield:before {
+  content: "";
+}
+
+/* line 312, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-calendar-o:before {
+  content: "";
+}
+
+/* line 313, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-fire-extinguisher:before {
+  content: "";
+}
+
+/* line 314, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-rocket:before {
+  content: "";
+}
+
+/* line 315, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-maxcdn:before {
+  content: "";
+}
+
+/* line 316, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-chevron-circle-left:before {
+  content: "";
+}
+
+/* line 317, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-chevron-circle-right:before {
+  content: "";
+}
+
+/* line 318, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-chevron-circle-up:before {
+  content: "";
+}
+
+/* line 319, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-chevron-circle-down:before {
+  content: "";
+}
+
+/* line 320, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-html5:before {
+  content: "";
+}
+
+/* line 321, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-css3:before {
+  content: "";
+}
+
+/* line 322, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-anchor:before {
+  content: "";
+}
+
+/* line 323, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-unlock-alt:before {
+  content: "";
+}
+
+/* line 324, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-bullseye:before {
+  content: "";
+}
+
+/* line 325, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-ellipsis-h:before {
+  content: "";
+}
+
+/* line 326, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-ellipsis-v:before {
+  content: "";
+}
+
+/* line 327, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-rss-square:before {
+  content: "";
+}
+
+/* line 328, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-play-circle:before {
+  content: "";
+}
+
+/* line 329, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-ticket:before {
+  content: "";
+}
+
+/* line 330, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-minus-square:before {
+  content: "";
+}
+
+/* line 331, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-minus-square-o:before {
+  content: "";
+}
+
+/* line 332, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-level-up:before {
+  content: "";
+}
+
+/* line 333, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-level-down:before {
+  content: "";
+}
+
+/* line 334, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-check-square:before {
+  content: "";
+}
+
+/* line 335, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-pencil-square:before {
+  content: "";
+}
+
+/* line 336, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-external-link-square:before {
+  content: "";
+}
+
+/* line 337, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-share-square:before {
+  content: "";
+}
+
+/* line 338, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-compass:before {
+  content: "";
+}
+
+/* line 339, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: "";
+}
+
+/* line 341, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: "";
+}
+
+/* line 343, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: "";
+}
+
+/* line 345, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-euro:before,
+.fa-eur:before {
+  content: "";
+}
+
+/* line 347, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-gbp:before {
+  content: "";
+}
+
+/* line 348, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-dollar:before,
+.fa-usd:before {
+  content: "";
+}
+
+/* line 350, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-rupee:before,
+.fa-inr:before {
+  content: "";
+}
+
+/* line 352, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: "";
+}
+
+/* line 356, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: "";
+}
+
+/* line 359, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-won:before,
+.fa-krw:before {
+  content: "";
+}
+
+/* line 361, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: "";
+}
+
+/* line 363, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-file:before {
+  content: "";
+}
+
+/* line 364, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-file-text:before {
+  content: "";
+}
+
+/* line 365, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-sort-alpha-asc:before {
+  content: "";
+}
+
+/* line 366, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-sort-alpha-desc:before {
+  content: "";
+}
+
+/* line 367, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-sort-amount-asc:before {
+  content: "";
+}
+
+/* line 368, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-sort-amount-desc:before {
+  content: "";
+}
+
+/* line 369, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-sort-numeric-asc:before {
+  content: "";
+}
+
+/* line 370, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-sort-numeric-desc:before {
+  content: "";
+}
+
+/* line 371, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-thumbs-up:before {
+  content: "";
+}
+
+/* line 372, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-thumbs-down:before {
+  content: "";
+}
+
+/* line 373, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-youtube-square:before {
+  content: "";
+}
+
+/* line 374, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-youtube:before {
+  content: "";
+}
+
+/* line 375, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-xing:before {
+  content: "";
+}
+
+/* line 376, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-xing-square:before {
+  content: "";
+}
+
+/* line 377, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-youtube-play:before {
+  content: "";
+}
+
+/* line 378, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-dropbox:before {
+  content: "";
+}
+
+/* line 379, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-stack-overflow:before {
+  content: "";
+}
+
+/* line 380, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-instagram:before {
+  content: "";
+}
+
+/* line 381, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-flickr:before {
+  content: "";
+}
+
+/* line 382, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-adn:before {
+  content: "";
+}
+
+/* line 383, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-bitbucket:before {
+  content: "";
+}
+
+/* line 384, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-bitbucket-square:before {
+  content: "";
+}
+
+/* line 385, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-tumblr:before {
+  content: "";
+}
+
+/* line 386, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-tumblr-square:before {
+  content: "";
+}
+
+/* line 387, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-long-arrow-down:before {
+  content: "";
+}
+
+/* line 388, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-long-arrow-up:before {
+  content: "";
+}
+
+/* line 389, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-long-arrow-left:before {
+  content: "";
+}
+
+/* line 390, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-long-arrow-right:before {
+  content: "";
+}
+
+/* line 391, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-apple:before {
+  content: "";
+}
+
+/* line 392, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-windows:before {
+  content: "";
+}
+
+/* line 393, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-android:before {
+  content: "";
+}
+
+/* line 394, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-linux:before {
+  content: "";
+}
+
+/* line 395, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-dribbble:before {
+  content: "";
+}
+
+/* line 396, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-skype:before {
+  content: "";
+}
+
+/* line 397, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-foursquare:before {
+  content: "";
+}
+
+/* line 398, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-trello:before {
+  content: "";
+}
+
+/* line 399, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-female:before {
+  content: "";
+}
+
+/* line 400, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-male:before {
+  content: "";
+}
+
+/* line 401, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-gittip:before,
+.fa-gratipay:before {
+  content: "";
+}
+
+/* line 403, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-sun-o:before {
+  content: "";
+}
+
+/* line 404, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-moon-o:before {
+  content: "";
+}
+
+/* line 405, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-archive:before {
+  content: "";
+}
+
+/* line 406, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-bug:before {
+  content: "";
+}
+
+/* line 407, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-vk:before {
+  content: "";
+}
+
+/* line 408, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-weibo:before {
+  content: "";
+}
+
+/* line 409, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-renren:before {
+  content: "";
+}
+
+/* line 410, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-pagelines:before {
+  content: "";
+}
+
+/* line 411, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-stack-exchange:before {
+  content: "";
+}
+
+/* line 412, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-arrow-circle-o-right:before {
+  content: "";
+}
+
+/* line 413, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-arrow-circle-o-left:before {
+  content: "";
+}
+
+/* line 414, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: "";
+}
+
+/* line 416, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-dot-circle-o:before {
+  content: "";
+}
+
+/* line 417, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-wheelchair:before {
+  content: "";
+}
+
+/* line 418, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-vimeo-square:before {
+  content: "";
+}
+
+/* line 419, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: "";
+}
+
+/* line 421, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-plus-square-o:before {
+  content: "";
+}
+
+/* line 422, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-space-shuttle:before {
+  content: "";
+}
+
+/* line 423, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-slack:before {
+  content: "";
+}
+
+/* line 424, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-envelope-square:before {
+  content: "";
+}
+
+/* line 425, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-wordpress:before {
+  content: "";
+}
+
+/* line 426, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-openid:before {
+  content: "";
+}
+
+/* line 427, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+  content: "";
+}
+
+/* line 430, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  content: "";
+}
+
+/* line 432, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-yahoo:before {
+  content: "";
+}
+
+/* line 433, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-google:before {
+  content: "";
+}
+
+/* line 434, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-reddit:before {
+  content: "";
+}
+
+/* line 435, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-reddit-square:before {
+  content: "";
+}
+
+/* line 436, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-stumbleupon-circle:before {
+  content: "";
+}
+
+/* line 437, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-stumbleupon:before {
+  content: "";
+}
+
+/* line 438, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-delicious:before {
+  content: "";
+}
+
+/* line 439, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-digg:before {
+  content: "";
+}
+
+/* line 440, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-pied-piper:before {
+  content: "";
+}
+
+/* line 441, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-pied-piper-alt:before {
+  content: "";
+}
+
+/* line 442, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-drupal:before {
+  content: "";
+}
+
+/* line 443, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-joomla:before {
+  content: "";
+}
+
+/* line 444, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-language:before {
+  content: "";
+}
+
+/* line 445, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-fax:before {
+  content: "";
+}
+
+/* line 446, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-building:before {
+  content: "";
+}
+
+/* line 447, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-child:before {
+  content: "";
+}
+
+/* line 448, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-paw:before {
+  content: "";
+}
+
+/* line 449, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-spoon:before {
+  content: "";
+}
+
+/* line 450, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-cube:before {
+  content: "";
+}
+
+/* line 451, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-cubes:before {
+  content: "";
+}
+
+/* line 452, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-behance:before {
+  content: "";
+}
+
+/* line 453, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-behance-square:before {
+  content: "";
+}
+
+/* line 454, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-steam:before {
+  content: "";
+}
+
+/* line 455, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-steam-square:before {
+  content: "";
+}
+
+/* line 456, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-recycle:before {
+  content: "";
+}
+
+/* line 457, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-automobile:before,
+.fa-car:before {
+  content: "";
+}
+
+/* line 459, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-cab:before,
+.fa-taxi:before {
+  content: "";
+}
+
+/* line 461, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-tree:before {
+  content: "";
+}
+
+/* line 462, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-spotify:before {
+  content: "";
+}
+
+/* line 463, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-deviantart:before {
+  content: "";
+}
+
+/* line 464, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-soundcloud:before {
+  content: "";
+}
+
+/* line 465, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-database:before {
+  content: "";
+}
+
+/* line 466, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-file-pdf-o:before {
+  content: "";
+}
+
+/* line 467, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-file-word-o:before {
+  content: "";
+}
+
+/* line 468, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-file-excel-o:before {
+  content: "";
+}
+
+/* line 469, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-file-powerpoint-o:before {
+  content: "";
+}
+
+/* line 470, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+  content: "";
+}
+
+/* line 473, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+  content: "";
+}
+
+/* line 475, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+  content: "";
+}
+
+/* line 477, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+  content: "";
+}
+
+/* line 479, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-file-code-o:before {
+  content: "";
+}
+
+/* line 480, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-vine:before {
+  content: "";
+}
+
+/* line 481, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-codepen:before {
+  content: "";
+}
+
+/* line 482, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-jsfiddle:before {
+  content: "";
+}
+
+/* line 483, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-life-bouy:before,
+.fa-life-buoy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+  content: "";
+}
+
+/* line 488, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-circle-o-notch:before {
+  content: "";
+}
+
+/* line 489, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-ra:before,
+.fa-rebel:before {
+  content: "";
+}
+
+/* line 491, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-ge:before,
+.fa-empire:before {
+  content: "";
+}
+
+/* line 493, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-git-square:before {
+  content: "";
+}
+
+/* line 494, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-git:before {
+  content: "";
+}
+
+/* line 495, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-hacker-news:before {
+  content: "";
+}
+
+/* line 496, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-tencent-weibo:before {
+  content: "";
+}
+
+/* line 497, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-qq:before {
+  content: "";
+}
+
+/* line 498, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-wechat:before,
+.fa-weixin:before {
+  content: "";
+}
+
+/* line 500, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-send:before,
+.fa-paper-plane:before {
+  content: "";
+}
+
+/* line 502, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+  content: "";
+}
+
+/* line 504, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-history:before {
+  content: "";
+}
+
+/* line 505, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-genderless:before,
+.fa-circle-thin:before {
+  content: "";
+}
+
+/* line 507, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-header:before {
+  content: "";
+}
+
+/* line 508, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-paragraph:before {
+  content: "";
+}
+
+/* line 509, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-sliders:before {
+  content: "";
+}
+
+/* line 510, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-share-alt:before {
+  content: "";
+}
+
+/* line 511, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-share-alt-square:before {
+  content: "";
+}
+
+/* line 512, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-bomb:before {
+  content: "";
+}
+
+/* line 513, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-soccer-ball-o:before,
+.fa-futbol-o:before {
+  content: "";
+}
+
+/* line 515, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-tty:before {
+  content: "";
+}
+
+/* line 516, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-binoculars:before {
+  content: "";
+}
+
+/* line 517, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-plug:before {
+  content: "";
+}
+
+/* line 518, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-slideshare:before {
+  content: "";
+}
+
+/* line 519, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-twitch:before {
+  content: "";
+}
+
+/* line 520, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-yelp:before {
+  content: "";
+}
+
+/* line 521, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-newspaper-o:before {
+  content: "";
+}
+
+/* line 522, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-wifi:before {
+  content: "";
+}
+
+/* line 523, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-calculator:before {
+  content: "";
+}
+
+/* line 524, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-paypal:before {
+  content: "";
+}
+
+/* line 525, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-google-wallet:before {
+  content: "";
+}
+
+/* line 526, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-cc-visa:before {
+  content: "";
+}
+
+/* line 527, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-cc-mastercard:before {
+  content: "";
+}
+
+/* line 528, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-cc-discover:before {
+  content: "";
+}
+
+/* line 529, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-cc-amex:before {
+  content: "";
+}
+
+/* line 530, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-cc-paypal:before {
+  content: "";
+}
+
+/* line 531, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-cc-stripe:before {
+  content: "";
+}
+
+/* line 532, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-bell-slash:before {
+  content: "";
+}
+
+/* line 533, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-bell-slash-o:before {
+  content: "";
+}
+
+/* line 534, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-trash:before {
+  content: "";
+}
+
+/* line 535, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-copyright:before {
+  content: "";
+}
+
+/* line 536, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-at:before {
+  content: "";
+}
+
+/* line 537, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-eyedropper:before {
+  content: "";
+}
+
+/* line 538, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-paint-brush:before {
+  content: "";
+}
+
+/* line 539, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-birthday-cake:before {
+  content: "";
+}
+
+/* line 540, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-area-chart:before {
+  content: "";
+}
+
+/* line 541, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-pie-chart:before {
+  content: "";
+}
+
+/* line 542, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-line-chart:before {
+  content: "";
+}
+
+/* line 543, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-lastfm:before {
+  content: "";
+}
+
+/* line 544, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-lastfm-square:before {
+  content: "";
+}
+
+/* line 545, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-toggle-off:before {
+  content: "";
+}
+
+/* line 546, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-toggle-on:before {
+  content: "";
+}
+
+/* line 547, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-bicycle:before {
+  content: "";
+}
+
+/* line 548, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-bus:before {
+  content: "";
+}
+
+/* line 549, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-ioxhost:before {
+  content: "";
+}
+
+/* line 550, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-angellist:before {
+  content: "";
+}
+
+/* line 551, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-cc:before {
+  content: "";
+}
+
+/* line 552, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-shekel:before,
+.fa-sheqel:before,
+.fa-ils:before {
+  content: "";
+}
+
+/* line 555, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-meanpath:before {
+  content: "";
+}
+
+/* line 556, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-buysellads:before {
+  content: "";
+}
+
+/* line 557, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-connectdevelop:before {
+  content: "";
+}
+
+/* line 558, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-dashcube:before {
+  content: "";
+}
+
+/* line 559, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-forumbee:before {
+  content: "";
+}
+
+/* line 560, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-leanpub:before {
+  content: "";
+}
+
+/* line 561, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-sellsy:before {
+  content: "";
+}
+
+/* line 562, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-shirtsinbulk:before {
+  content: "";
+}
+
+/* line 563, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-simplybuilt:before {
+  content: "";
+}
+
+/* line 564, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-skyatlas:before {
+  content: "";
+}
+
+/* line 565, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-cart-plus:before {
+  content: "";
+}
+
+/* line 566, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-cart-arrow-down:before {
+  content: "";
+}
+
+/* line 567, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-diamond:before {
+  content: "";
+}
+
+/* line 568, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-ship:before {
+  content: "";
+}
+
+/* line 569, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-user-secret:before {
+  content: "";
+}
+
+/* line 570, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-motorcycle:before {
+  content: "";
+}
+
+/* line 571, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-street-view:before {
+  content: "";
+}
+
+/* line 572, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-heartbeat:before {
+  content: "";
+}
+
+/* line 573, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-venus:before {
+  content: "";
+}
+
+/* line 574, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-mars:before {
+  content: "";
+}
+
+/* line 575, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-mercury:before {
+  content: "";
+}
+
+/* line 576, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-transgender:before {
+  content: "";
+}
+
+/* line 577, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-transgender-alt:before {
+  content: "";
+}
+
+/* line 578, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-venus-double:before {
+  content: "";
+}
+
+/* line 579, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-mars-double:before {
+  content: "";
+}
+
+/* line 580, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-venus-mars:before {
+  content: "";
+}
+
+/* line 581, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-mars-stroke:before {
+  content: "";
+}
+
+/* line 582, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-mars-stroke-v:before {
+  content: "";
+}
+
+/* line 583, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-mars-stroke-h:before {
+  content: "";
+}
+
+/* line 584, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-neuter:before {
+  content: "";
+}
+
+/* line 585, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-facebook-official:before {
+  content: "";
+}
+
+/* line 586, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-pinterest-p:before {
+  content: "";
+}
+
+/* line 587, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-whatsapp:before {
+  content: "";
+}
+
+/* line 588, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-server:before {
+  content: "";
+}
+
+/* line 589, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-user-plus:before {
+  content: "";
+}
+
+/* line 590, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-user-times:before {
+  content: "";
+}
+
+/* line 591, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-hotel:before,
+.fa-bed:before {
+  content: "";
+}
+
+/* line 593, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-viacoin:before {
+  content: "";
+}
+
+/* line 594, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-train:before {
+  content: "";
+}
+
+/* line 595, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-subway:before {
+  content: "";
+}
+
+/* line 596, /usr/local/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.3.2.1/assets/stylesheets/font-awesome/_icons.scss */
+.fa-medium:before {
+  content: "";
+}
+
+/* required styles */
+/* line 3, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-map-pane,
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow,
+.leaflet-tile-pane,
+.leaflet-tile-container,
+.leaflet-overlay-pane,
+.leaflet-shadow-pane,
+.leaflet-marker-pane,
+.leaflet-popup-pane,
+.leaflet-overlay-pane svg,
+.leaflet-zoom-box,
+.leaflet-image-layer,
+.leaflet-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 21, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-container {
+  overflow: hidden;
+  -ms-touch-action: none;
+}
+
+/* line 25, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* line 33, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+  display: block;
+}
+
+/* map is broken in FF if you have max-width: 100% on tiles */
+/* line 38, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-container img {
+  max-width: none !important;
+}
+
+/* stupid Android 2 doesn't understand "max-width: none" properly */
+/* line 42, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-container img.leaflet-image-layer {
+  max-width: 15000px !important;
+}
+
+/* line 45, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-tile {
+  filter: inherit;
+  visibility: hidden;
+}
+
+/* line 49, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-tile-loaded {
+  visibility: inherit;
+}
+
+/* line 52, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-zoom-box {
+  width: 0;
+  height: 0;
+}
+
+/* workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=888319 */
+/* line 57, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-overlay-pane svg {
+  -moz-user-select: none;
+}
+
+/* line 61, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-tile-pane {
+  z-index: 2;
+}
+
+/* line 62, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-objects-pane {
+  z-index: 3;
+}
+
+/* line 63, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-overlay-pane {
+  z-index: 4;
+}
+
+/* line 64, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-shadow-pane {
+  z-index: 5;
+}
+
+/* line 65, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-marker-pane {
+  z-index: 6;
+}
+
+/* line 66, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-popup-pane {
+  z-index: 7;
+}
+
+/* line 68, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-vml-shape {
+  width: 1px;
+  height: 1px;
+}
+
+/* line 72, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.lvml {
+  behavior: url(#default#VML);
+  display: inline-block;
+  position: absolute;
+}
+
+/* control positioning */
+/* line 81, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-control {
+  position: relative;
+  z-index: 7;
+  pointer-events: auto;
+}
+
+/* line 86, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-top,
+.leaflet-bottom {
+  position: absolute;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+/* line 92, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-top {
+  top: 0;
+}
+
+/* line 95, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-right {
+  right: 0;
+}
+
+/* line 98, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-bottom {
+  bottom: 0;
+}
+
+/* line 101, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-left {
+  left: 0;
+}
+
+/* line 104, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-control {
+  float: left;
+  clear: both;
+}
+
+/* line 108, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-right .leaflet-control {
+  float: right;
+}
+
+/* line 111, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-top .leaflet-control {
+  margin-top: 10px;
+}
+
+/* line 114, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-bottom .leaflet-control {
+  margin-bottom: 10px;
+}
+
+/* line 117, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-left .leaflet-control {
+  margin-left: 10px;
+}
+
+/* line 120, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-right .leaflet-control {
+  margin-right: 10px;
+}
+
+/* zoom and fade animations */
+/* line 127, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-fade-anim .leaflet-tile,
+.leaflet-fade-anim .leaflet-popup {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+/* line 135, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-fade-anim .leaflet-tile-loaded,
+.leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
+  opacity: 1;
+}
+
+/* line 140, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-zoom-anim .leaflet-zoom-animated {
+  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
+  -moz-transition: -moz-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
+  -o-transition: -o-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
+  transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1);
+}
+
+/* line 146, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-zoom-anim .leaflet-tile,
+.leaflet-pan-anim .leaflet-tile,
+.leaflet-touching .leaflet-zoom-animated {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+/* line 155, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-zoom-anim .leaflet-zoom-hide {
+  visibility: hidden;
+}
+
+/* cursors */
+/* line 162, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-clickable {
+  cursor: pointer;
+}
+
+/* line 165, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-container {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+}
+
+/* line 169, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-popup-pane,
+.leaflet-control {
+  cursor: auto;
+}
+
+/* line 173, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-dragging .leaflet-container,
+.leaflet-dragging .leaflet-clickable {
+  cursor: move;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+}
+
+/* visual tweaks */
+/* line 183, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-container {
+  background: #ddd;
+  outline: 0;
+}
+
+/* line 187, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-container a {
+  color: #0078A8;
+}
+
+/* line 190, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-container a.leaflet-active {
+  outline: 2px solid orange;
+}
+
+/* line 193, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-zoom-box {
+  border: 2px dotted #38f;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* general typography */
+/* line 200, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-container {
+  font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+/* general toolbar styles */
+/* line 207, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-bar {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+  border-radius: 4px;
+}
+
+/* line 211, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-bar a,
+.leaflet-bar a:hover {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+/* line 223, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-bar a,
+.leaflet-control-layers-toggle {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+/* line 229, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-bar a:hover {
+  background-color: #f4f4f4;
+}
+
+/* line 232, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-bar a:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* line 236, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-bar a:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom: none;
+}
+
+/* line 241, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-bar a.leaflet-disabled {
+  cursor: default;
+  background-color: #f4f4f4;
+  color: #bbb;
+}
+
+/* line 247, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-touch .leaflet-bar a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+/* zoom control */
+/* line 256, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  font: bold 18px 'Lucida Console', Monaco, monospace;
+  text-indent: 1px;
+}
+
+/* line 261, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-control-zoom-out {
+  font-size: 20px;
+}
+
+/* line 265, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-touch .leaflet-control-zoom-in {
+  font-size: 22px;
+}
+
+/* line 268, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-touch .leaflet-control-zoom-out {
+  font-size: 24px;
+}
+
+/* layers control */
+/* line 275, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-control-layers {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  background: #fff;
+  border-radius: 5px;
+}
+
+/* line 280, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-control-layers-toggle {
+  background-image: url(/assets/layers-0908aa2a72a082fb2563a2427a5e4fb247571862b448b80fb6f720af1109923e.png);
+  width: 36px;
+  height: 36px;
+}
+
+/* line 285, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-retina .leaflet-control-layers-toggle {
+  background-image: url(/assets/layers-2x-0c02a2388f637d21f86e6d4b314ec9a968e7b05ad4c3a005280a3f76c0fd3cb8.png);
+  background-size: 26px 26px;
+}
+
+/* line 289, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-touch .leaflet-control-layers-toggle {
+  width: 44px;
+  height: 44px;
+}
+
+/* line 293, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-control-layers .leaflet-control-layers-list,
+.leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+  display: none;
+}
+
+/* line 297, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-control-layers-expanded .leaflet-control-layers-list {
+  display: block;
+  position: relative;
+}
+
+/* line 301, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-control-layers-expanded {
+  padding: 6px 10px 6px 6px;
+  color: #333;
+  background: #fff;
+}
+
+/* line 306, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-control-layers-selector {
+  margin-top: 2px;
+  position: relative;
+  top: 1px;
+}
+
+/* line 311, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-control-layers label {
+  display: block;
+}
+
+/* line 314, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-control-layers-separator {
+  height: 0;
+  border-top: 1px solid #ddd;
+  margin: 5px -10px 5px -6px;
+}
+
+/* attribution and scale controls */
+/* line 323, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-container .leaflet-control-attribution {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+/* line 328, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-control-attribution,
+.leaflet-control-scale-line {
+  padding: 0 5px;
+  color: #333;
+}
+
+/* line 333, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-control-attribution a {
+  text-decoration: none;
+}
+
+/* line 336, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-control-attribution a:hover {
+  text-decoration: underline;
+}
+
+/* line 339, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-container .leaflet-control-attribution,
+.leaflet-container .leaflet-control-scale {
+  font-size: 11px;
+}
+
+/* line 343, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-left .leaflet-control-scale {
+  margin-left: 5px;
+}
+
+/* line 346, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-bottom .leaflet-control-scale {
+  margin-bottom: 5px;
+}
+
+/* line 349, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-control-scale-line {
+  border: 2px solid #777;
+  border-top: none;
+  line-height: 1.1;
+  padding: 2px 5px 1px;
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 363, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-control-scale-line:not(:first-child) {
+  border-top: 2px solid #777;
+  border-bottom: none;
+  margin-top: -2px;
+}
+
+/* line 368, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-control-scale-line:not(:first-child):not(:last-child) {
+  border-bottom: 2px solid #777;
+}
+
+/* line 372, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-touch .leaflet-control-attribution,
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+  box-shadow: none;
+}
+
+/* line 377, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background-clip: padding-box;
+}
+
+/* popup */
+/* line 386, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-popup {
+  position: absolute;
+  text-align: center;
+}
+
+/* line 390, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-popup-content-wrapper {
+  padding: 1px;
+  text-align: left;
+  border-radius: 12px;
+}
+
+/* line 395, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-popup-content {
+  margin: 13px 19px;
+  line-height: 1.4;
+}
+
+/* line 399, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-popup-content p {
+  margin: 18px 0;
+}
+
+/* line 402, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-popup-tip-container {
+  margin: 0 auto;
+  width: 40px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 409, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-popup-tip {
+  width: 17px;
+  height: 17px;
+  padding: 1px;
+  margin: -10px auto 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 422, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: white;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* line 428, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-container a.leaflet-popup-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 4px 0 0;
+  text-align: center;
+  width: 18px;
+  height: 14px;
+  font: 16px/14px Tahoma, Verdana, sans-serif;
+  color: #c3c3c3;
+  text-decoration: none;
+  font-weight: bold;
+  background: transparent;
+}
+
+/* line 442, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-container a.leaflet-popup-close-button:hover {
+  color: #999;
+}
+
+/* line 445, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-popup-scrolled {
+  overflow: auto;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+/* line 451, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-oldie .leaflet-popup-content-wrapper {
+  zoom: 1;
+}
+
+/* line 454, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-oldie .leaflet-popup-tip {
+  width: 24px;
+  margin: 0 auto;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)";
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678);
+}
+
+/* line 461, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-oldie .leaflet-popup-tip-container {
+  margin-top: -1px;
+}
+
+/* line 465, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-oldie .leaflet-control-zoom,
+.leaflet-oldie .leaflet-control-layers,
+.leaflet-oldie .leaflet-popup-content-wrapper,
+.leaflet-oldie .leaflet-popup-tip {
+  border: 1px solid #999;
+}
+
+/* div icon */
+/* line 475, /usr/local/lib/ruby/gems/2.2.0/gems/leaflet-rails-0.7.4/vendor/assets/stylesheets/leaflet.css.erb */
+.leaflet-div-icon {
+  background: #fff;
+  border: 1px solid #666;
+}
+
+/* line 1, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/welcome.css.scss */
+#background {
+  background-image: url(/assets/chili-background-20ae5c3a348d01e177b831368c1ce3e97ba79b0fea653c58195a00700b94a081.jpg);
+  height: 100vh;
+  /*viewport height */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+/* line 7, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/welcome.css.scss */
+#background header {
+  color: #FFFFFF;
+  padding: 3rem 0;
+}
+/* line 10, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/welcome.css.scss */
+#background header #logo {
+  float: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 17, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/welcome.css.scss */
+#background header nav {
+  float: right;
+}
+/* line 19, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/welcome.css.scss */
+#background header nav ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 22, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/welcome.css.scss */
+#background header nav ul li {
+  display: inline;
+  margin-left: 2.5rem;
+  position: relative;
+}
+/* line 26, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/welcome.css.scss */
+#background header nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 34, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/welcome.css.scss */
+#background h1 {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 7rem 0 2rem 0;
+  text-shadow: 0px 0px 3px #000;
+}
+/* line 42, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/welcome.css.scss */
+#background .button {
+  margin: 1.5rem 2.5% 0 2.5%;
+  display: inline-block;
+  min-width: 130px;
+}
+
+/* line 1, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background {
+  color: blue;
+  background-image: url(/assets/berries-background-90553051002607a65c1354f5be704728d68645fac72b0995804e8133ef521974.jpg);
+  height: 100vh;
+  /*viewport height */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+/* line 8, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background header {
+  color: #FFFFFF;
+  padding: 3rem 0;
+}
+/* line 11, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background header #logo {
+  float: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 18, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background header nav {
+  float: right;
+}
+/* line 20, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background header nav ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 23, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background header nav ul li {
+  display: inline;
+  margin-left: 2.5rem;
+  position: relative;
+}
+/* line 27, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background header nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 35, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background h1 {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 7rem 0 2rem 0;
+  text-shadow: 0px 0px 3px #000;
+}
+/* line 43, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background p {
+  color: #FFFFFF;
+  text-shadow: 0px 0px 3px #000;
+}
+/* line 47, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendor_landing.css.scss */
+.vendor-background .button {
+  margin: 1.5rem 2.5% 0 2.5%;
+  display: inline-block;
+  min-width: 130px;
+}
+
+/* line 1, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background {
+  background-image: url(/assets/coffee-background-70bf9f9c01a2ced0824a04d3b947993451340ac04495eddbd65d68f6437d36c7.jpg);
+  height: 100vh;
+  /*viewport height */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+/* line 7, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background header {
+  color: #FFFFFF;
+  padding: 3rem 0;
+}
+/* line 10, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background header #logo {
+  float: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 17, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background header nav {
+  float: right;
+}
+/* line 19, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background header nav ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 22, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background header nav ul li {
+  display: inline;
+  margin-left: 2.5rem;
+  position: relative;
+}
+/* line 26, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background header nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 34, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background h1 {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 7rem 0 2rem 0;
+  text-shadow: 0px 0px 3px #000;
+}
+/* line 42, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background p {
+  color: #FFFFFF;
+  text-shadow: 0px 0px 3px #000;
+}
+/* line 46, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/customer_landing.css.scss */
+.customer-background .button {
+  margin: 1.5rem 2.5% 0 2.5%;
+  display: inline-block;
+  min-width: 130px;
+}
+
+/*=================================*/
+/* VENDOR INDEX                    */
+/*=================================*/
+/* line 10, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendors {
+  padding-bottom: 3rem;
+}
+/* line 12, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendors ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+/* line 16, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendors ul li {
+  width: 23%;
+  float: left;
+  margin: 0 1% 2rem 1%;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  border-radius: .35rem;
+}
+/* line 23, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendors ul li img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: .35rem .35rem 0 0;
+}
+/* line 28, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendors ul li .vendor_overview {
+  padding: 1rem 7.5%;
+}
+/* line 30, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendors ul li .vendor_overview h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #22292e;
+  text-align: center;
+}
+/* line 37, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendors ul li .vendor_overview .vendor_description {
+  color: #9aaab5;
+  font-size: .9rem;
+  margin: .5rem 0 .25rem 0;
+}
+/* line 45, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendors ul li:hover img {
+  opacity: .8;
+}
+/* line 49, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendors ul li:hover .vendor_overview h2 {
+  color: #DC2031;
+}
+
+/* line 58, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor_category {
+  text-align: center;
+}
+
+/* line 65, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor_heading ul {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 2.5rem;
+}
+/* line 70, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor_heading ul li {
+  display: inline;
+  margin-left: 2.5rem;
+}
+/* line 76, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor_heading ul a {
+  color: #22292e;
+  text-decoration: none;
+}
+/* line 82, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor_heading ul .vendor_link:hover a {
+  color: #DC2031;
+}
+
+/*.container {
+position: relative;
+
+}
+
+.vendor_number {
+
+  position: absolute;
+  bottom: 0;
+}*/
+/*=================================*/
+/* VENDOR SHOW                     */
+/*=================================*/
+/* line 112, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor_show {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /usr/local/lib/ruby/gems/2.2.0/gems/bourbon-4.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+.vendor_show::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 20, /usr/local/lib/ruby/gems/2.2.0/gems/bourbon-4.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+.vendor_show::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 117, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor_box_wrapper {
+  float: left;
+  display: block;
+  margin-right: 2.12765957%;
+  width: 82.9787234%;
+  margin-left: 8.5106383%;
+}
+/* line 89, /usr/local/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+.vendor_box_wrapper:last-child {
+  margin-right: 0;
+}
+
+/* line 122, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+article {
+  float: left;
+  display: block;
+  margin-right: 2.56410256%;
+  width: 48.71794872%;
+}
+/* line 89, /usr/local/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+article:last-child {
+  margin-right: 0;
+}
+@media all and (max-width: 1176px) {
+  /* line 122, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+  article {
+    float: left;
+    display: block;
+    margin-right: 2.56410256%;
+    width: 100%;
+  }
+  /* line 89, /usr/local/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+  article:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 130, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+aside.profile-pic {
+  float: left;
+  display: block;
+  margin-right: 2.56410256%;
+  width: 48.71794872%;
+}
+/* line 89, /usr/local/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+aside.profile-pic:last-child {
+  margin-right: 0;
+}
+@media all and (max-width: 1176px) {
+  /* line 130, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+  aside.profile-pic {
+    float: left;
+    display: block;
+    margin-right: 2.56410256%;
+    width: 100%;
+  }
+  /* line 89, /usr/local/lib/ruby/gems/2.2.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+  aside.profile-pic:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 137, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor-image {
+  margin-top: 55px;
+}
+@media all and (max-width: 1176px) {
+  /* line 137, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+  .vendor-image {
+    margin-top: 70px;
+  }
+}
+
+/* line 148, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor_profile .vendor_links a {
+  color: black;
+  margin: 1px;
+}
+/* line 152, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor_profile h1 {
+  margin-top: 0.67em;
+  margin-bottom: -.33em;
+}
+/* line 156, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor_profile .contact-display {
+  margin-left: -2.4rem;
+}
+/* line 159, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor_profile .contact-display li {
+  display: inline block;
+  float: left;
+  list-style: none;
+}
+/* line 163, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor_profile .contact-display li i {
+  color: #22292e;
+  margin-right: 1rem;
+}
+/* line 166, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor_profile .contact-display li i:hover {
+  color: #DC2031;
+}
+/* line 171, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor_profile .url-link {
+  margin-top: .5rem;
+}
+/* line 173, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/vendors.scss */
+.vendor_profile .url-link a {
+  color: #DC2031;
+  text-decoration: none;
+}
+
+/* line 1, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about {
+  background-image: url(/images/berries.jpg);
+  height: 100vh;
+  /*viewport height */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+/* line 7, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about header {
+  color: #FFFFFF;
+  padding: 3rem 0;
+}
+/* line 10, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about header #logo {
+  float: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 17, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about header nav {
+  float: right;
+}
+/* line 19, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about header nav ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 22, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about header nav ul li {
+  display: inline;
+  margin-left: 2.5rem;
+  position: relative;
+}
+/* line 26, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about header nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 34, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about h1 {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 7rem 0 2rem 0;
+}
+/* line 41, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about p {
+  color: #FFFFFF;
+}
+/* line 44, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+#about .button {
+  margin: 1.5rem 2.5% 0 2.5%;
+  display: inline-block;
+  min-width: 130px;
+}
+
+/* line 51, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/about.css.scss */
+.about p {
+  font-size: 1.1em;
+}
+
+/* ==========================================================================
+   $BASE-PICKER
+   ========================================================================== */
+/**
+ * Note: the root picker element should *NOT* be styled more than what’s here.
+ */
+/* line 7, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.css */
+.picker {
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.2;
+  color: #000000;
+  position: absolute;
+  z-index: 10000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/**
+ * The picker input element.
+ */
+/* line 22, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.css */
+.picker__input {
+  cursor: default;
+}
+
+/**
+ * When the picker is opened, the input element is “activated”.
+ */
+/* line 28, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.css */
+.picker__input.picker__input--active {
+  border-color: #0089ec;
+}
+
+/**
+ * The holder is the only “scrollable” top-level container element.
+ */
+/* line 34, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.css */
+.picker__holder {
+  width: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*!
+ * Classic picker styling for pickadate.js
+ * Demo: http://amsul.github.io/pickadate.js
+ */
+/**
+ * Note: the root picker element should *NOT* be styled more than what’s here.
+ */
+/* line 47, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.css */
+.picker {
+  width: 100%;
+}
+
+/**
+ * The holder is the base of the picker.
+ */
+/* line 53, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.css */
+.picker__holder {
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #aaaaaa;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+  min-width: 176px;
+  max-width: 466px;
+  max-height: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  opacity: 0;
+  -webkit-transform: translateY(-1em) perspective(600px) rotateX(10deg);
+  transform: translateY(-1em) perspective(600px) rotateX(10deg);
+  transition: -webkit-transform 0.15s ease-out, opacity 0.15s ease-out, max-height 0s 0.15s, border-width 0s 0.15s;
+  transition: transform 0.15s ease-out, opacity 0.15s ease-out, max-height 0s 0.15s, border-width 0s 0.15s;
+}
+
+/**
+ * The frame and wrap work together to ensure that
+ * clicks within the picker don’t reach the holder.
+ */
+/* line 77, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.css */
+.picker__frame {
+  padding: 1px;
+}
+
+/* line 80, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.css */
+.picker__wrap {
+  margin: -1px;
+}
+
+/**
+ * When the picker opens...
+ */
+/* line 86, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.css */
+.picker--opened .picker__holder {
+  max-height: 25em;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  -webkit-transform: translateY(0) perspective(600px) rotateX(0);
+  transform: translateY(0) perspective(600px) rotateX(0);
+  transition: -webkit-transform 0.15s ease-out, opacity 0.15s ease-out, max-height 0s, border-width 0s;
+  transition: transform 0.15s ease-out, opacity 0.15s ease-out, max-height 0s, border-width 0s;
+  box-shadow: 0 6px 18px 1px rgba(0, 0, 0, 0.12);
+}
+
+/* ==========================================================================
+   $BASE-DATE-PICKER
+   ========================================================================== */
+/**
+ * The picker box.
+ */
+/* line 7, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__box {
+  padding: 0 1em;
+}
+
+/**
+ * The header containing the month and year stuff.
+ */
+/* line 13, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__header {
+  text-align: center;
+  position: relative;
+  margin-top: .75em;
+}
+
+/**
+ * The month and year labels.
+ */
+/* line 21, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__month,
+.picker__year {
+  font-weight: 500;
+  display: inline-block;
+  margin-left: .25em;
+  margin-right: .25em;
+}
+
+/* line 28, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__year {
+  color: #999999;
+  font-size: .8em;
+  font-style: italic;
+}
+
+/**
+ * The month and year selectors.
+ */
+/* line 36, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__select--month,
+.picker__select--year {
+  border: 1px solid #b7b7b7;
+  height: 2em;
+  padding: .5em;
+  margin-left: .25em;
+  margin-right: .25em;
+}
+
+@media (min-width: 24.5em) {
+  /* line 45, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+  .picker__select--month,
+  .picker__select--year {
+    margin-top: -0.5em;
+  }
+}
+/* line 50, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__select--month {
+  width: 35%;
+}
+
+/* line 53, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__select--year {
+  width: 22.5%;
+}
+
+/* line 56, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__select--month:focus,
+.picker__select--year:focus {
+  border-color: #0089ec;
+}
+
+/**
+ * The month navigation buttons.
+ */
+/* line 63, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__nav--prev,
+.picker__nav--next {
+  position: absolute;
+  padding: .5em 1.25em;
+  width: 1em;
+  height: 1em;
+  box-sizing: content-box;
+  top: -0.25em;
+}
+
+@media (min-width: 24.5em) {
+  /* line 73, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+  .picker__nav--prev,
+  .picker__nav--next {
+    top: -0.33em;
+  }
+}
+/* line 78, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__nav--prev {
+  left: -1em;
+  padding-right: 1.25em;
+}
+
+@media (min-width: 24.5em) {
+  /* line 83, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+  .picker__nav--prev {
+    padding-right: 1.5em;
+  }
+}
+/* line 87, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__nav--next {
+  right: -1em;
+  padding-left: 1.25em;
+}
+
+@media (min-width: 24.5em) {
+  /* line 92, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+  .picker__nav--next {
+    padding-left: 1.5em;
+  }
+}
+/* line 96, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__nav--prev:before,
+.picker__nav--next:before {
+  content: " ";
+  border-top: .5em solid transparent;
+  border-bottom: .5em solid transparent;
+  border-right: 0.75em solid #000000;
+  width: 0;
+  height: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 107, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__nav--next:before {
+  border-right: 0;
+  border-left: 0.75em solid #000000;
+}
+
+/* line 111, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__nav--prev:hover,
+.picker__nav--next:hover {
+  cursor: pointer;
+  color: #000000;
+  background: #b1dcfb;
+}
+
+/* line 117, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__nav--disabled,
+.picker__nav--disabled:hover,
+.picker__nav--disabled:before,
+.picker__nav--disabled:before:hover {
+  cursor: default;
+  background: none;
+  border-right-color: #f5f5f5;
+  border-left-color: #f5f5f5;
+}
+
+/**
+ * The calendar table of dates
+ */
+/* line 129, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__table {
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  font-size: inherit;
+  width: 100%;
+  margin-top: .75em;
+  margin-bottom: .5em;
+}
+
+@media (min-height: 33.875em) {
+  /* line 140, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+  .picker__table {
+    margin-bottom: .75em;
+  }
+}
+/* line 144, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__table td {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * The weekday labels
+ */
+/* line 151, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__weekday {
+  width: 14.285714286%;
+  font-size: .75em;
+  padding-bottom: .25em;
+  color: #999999;
+  font-weight: 500;
+  /* Increase the spacing a tad */
+}
+
+@media (min-height: 33.875em) {
+  /* line 160, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+  .picker__weekday {
+    padding-bottom: .5em;
+  }
+}
+/**
+ * The days on the calendar
+ */
+/* line 167, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day {
+  padding: .3125em 0;
+  font-weight: 200;
+  border: 1px solid transparent;
+}
+
+/* line 172, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--today {
+  position: relative;
+}
+
+/* line 175, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--today:before {
+  content: " ";
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 0;
+  height: 0;
+  border-top: 0.5em solid #0059bc;
+  border-left: .5em solid transparent;
+}
+
+/* line 185, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--disabled:before {
+  border-top-color: #aaaaaa;
+}
+
+/* line 188, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--outfocus {
+  color: #dddddd;
+}
+
+/* line 191, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--infocus:hover,
+.picker__day--outfocus:hover {
+  cursor: pointer;
+  color: #000000;
+  background: #b1dcfb;
+}
+
+/* line 197, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--highlighted {
+  border-color: #0089ec;
+}
+
+/* line 200, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--highlighted:hover,
+.picker--focused .picker__day--highlighted {
+  cursor: pointer;
+  color: #000000;
+  background: #b1dcfb;
+}
+
+/* line 206, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--selected,
+.picker__day--selected:hover,
+.picker--focused .picker__day--selected {
+  background: #0089ec;
+  color: #ffffff;
+}
+
+/* line 212, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--disabled,
+.picker__day--disabled:hover,
+.picker--focused .picker__day--disabled {
+  background: #f5f5f5;
+  border-color: #f5f5f5;
+  color: #dddddd;
+  cursor: default;
+}
+
+/* line 220, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__day--highlighted.picker__day--disabled,
+.picker__day--highlighted.picker__day--disabled:hover {
+  background: #bbbbbb;
+}
+
+/**
+ * The footer containing the "today", "clear", and "close" buttons.
+ */
+/* line 227, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__footer {
+  text-align: center;
+}
+
+/* line 230, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--today,
+.picker__button--clear,
+.picker__button--close {
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  font-size: .8em;
+  padding: .66em 0;
+  font-weight: bold;
+  width: 33%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/* line 242, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--today:hover,
+.picker__button--clear:hover,
+.picker__button--close:hover {
+  cursor: pointer;
+  color: #000000;
+  background: #b1dcfb;
+  border-bottom-color: #b1dcfb;
+}
+
+/* line 250, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--today:focus,
+.picker__button--clear:focus,
+.picker__button--close:focus {
+  background: #b1dcfb;
+  border-color: #0089ec;
+  outline: none;
+}
+
+/* line 257, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--today:before,
+.picker__button--clear:before,
+.picker__button--close:before {
+  position: relative;
+  display: inline-block;
+  height: 0;
+}
+
+/* line 264, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--today:before,
+.picker__button--clear:before {
+  content: " ";
+  margin-right: .45em;
+}
+
+/* line 269, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--today:before {
+  top: -0.05em;
+  width: 0;
+  border-top: 0.66em solid #0059bc;
+  border-left: .66em solid transparent;
+}
+
+/* line 275, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--clear:before {
+  top: -0.25em;
+  width: .66em;
+  border-top: 3px solid #ee2200;
+}
+
+/* line 280, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--close:before {
+  content: "\D7";
+  top: -0.1em;
+  vertical-align: top;
+  font-size: 1.1em;
+  margin-right: .35em;
+  color: #777777;
+}
+
+/* line 288, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--today[disabled],
+.picker__button--today[disabled]:hover {
+  background: #f5f5f5;
+  border-color: #f5f5f5;
+  color: #dddddd;
+  cursor: default;
+}
+
+/* line 295, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.date.css */
+.picker__button--today[disabled]:before {
+  border-top-color: #aaaaaa;
+}
+
+/* ==========================================================================
+   $CLASSIC-DATE-PICKER
+   ========================================================================== */
+/* ==========================================================================
+   $BASE-TIME-PICKER
+   ========================================================================== */
+/**
+ * The list of times.
+ */
+/* line 7, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker__list {
+  list-style: none;
+  padding: 0.75em 0 4.2em;
+  margin: 0;
+}
+
+/**
+ * The times on the clock.
+ */
+/* line 15, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker__list-item {
+  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  margin-bottom: -1px;
+  position: relative;
+  background: #ffffff;
+  padding: .75em 1.25em;
+}
+
+@media (min-height: 46.75em) {
+  /* line 24, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+  .picker__list-item {
+    padding: .5em 1em;
+  }
+}
+/* Hovered time */
+/* line 29, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker__list-item:hover {
+  cursor: pointer;
+  color: #000000;
+  background: #b1dcfb;
+  border-color: #0089ec;
+  z-index: 10;
+}
+
+/* Highlighted and hovered/focused time */
+/* line 37, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker__list-item--highlighted {
+  border-color: #0089ec;
+  z-index: 10;
+}
+
+/* line 41, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker__list-item--highlighted:hover,
+.picker--focused .picker__list-item--highlighted {
+  cursor: pointer;
+  color: #000000;
+  background: #b1dcfb;
+}
+
+/* Selected and hovered/focused time */
+/* line 48, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker__list-item--selected,
+.picker__list-item--selected:hover,
+.picker--focused .picker__list-item--selected {
+  background: #0089ec;
+  color: #ffffff;
+  z-index: 10;
+}
+
+/* Disabled time */
+/* line 56, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker__list-item--disabled,
+.picker__list-item--disabled:hover,
+.picker--focused .picker__list-item--disabled {
+  background: #f5f5f5;
+  border-color: #f5f5f5;
+  color: #dddddd;
+  cursor: default;
+  border-color: #dddddd;
+  z-index: auto;
+}
+
+/**
+ * The clear button
+ */
+/* line 69, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker--time .picker__button--clear {
+  display: block;
+  width: 80%;
+  margin: 1em auto 0;
+  padding: 1em 1.25em;
+  background: none;
+  border: 0;
+  font-weight: 500;
+  font-size: .67em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #666;
+}
+
+/* line 82, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker--time .picker__button--clear:hover,
+.picker--time .picker__button--clear:focus {
+  color: #000000;
+  background: #b1dcfb;
+  background: #ee2200;
+  border-color: #ee2200;
+  cursor: pointer;
+  color: #ffffff;
+  outline: none;
+}
+
+/* line 92, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker--time .picker__button--clear:before {
+  top: -0.25em;
+  color: #666;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+/* line 98, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker--time .picker__button--clear:hover:before,
+.picker--time .picker__button--clear:focus:before {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* ==========================================================================
+   $CLASSIC-TIME-PICKER
+   ========================================================================== */
+/**
+ * Note: the root picker element should __NOT__ be styled
+ * more than what’s here. Style the `.picker__holder` instead.
+ */
+/* line 111, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker--time {
+  min-width: 256px;
+  max-width: 320px;
+}
+
+/**
+ * The holder is the base of the picker.
+ */
+/* line 118, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker--time .picker__holder {
+  background: #f2f2f2;
+}
+
+@media (min-height: 40.125em) {
+  /* line 122, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+  .picker--time .picker__holder {
+    font-size: .875em;
+  }
+}
+/**
+ * The box contains the list of times.
+ */
+/* line 129, /usr/local/lib/ruby/gems/2.2.0/gems/pickadate-rails-3.5.6.0/vendor/assets/stylesheets/pickadate/classic.time.css */
+.picker--time .picker__box {
+  padding: 0;
+  position: relative;
+}
+
+/* line 5, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/markets.scss */
+#map {
+  height: 550px;
+}
+
+/* line 9, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/markets.scss */
+.error {
+  display: none;
+}
+
+/* line 13, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/markets.scss */
+.market-column th {
+  margin-right: 3rem;
+}
+
+/*=================================*/
+/* BODY                            */
+/*=================================*/
+/* line 29, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+body {
+  font-family: 'Raleway', sans-serif;
+ /*font-family: 'Lato', sans-serif;
+*/
+}
+
+/* line 34, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+h1, h2 {
+  font-family: 'Lato', sans-serif;
+}
+
+/*=================================*/
+/* WRAPPERS                        */
+/*=================================*/
+/* line 43, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.wrapper_wide {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 48, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 53, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.wrapper_skinny {
+  width: 60%;
+  margin: 0 auto;
+  /*padding-top: 6.5rem;*/
+}
+
+/* line 60, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.cf:before, cf:after {
+  content: " ";
+  display: table;
+}
+
+/* line 65, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.cf:after {
+  clear: both;
+}
+
+/* line 69, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#notice_wrapper {
+  width: 100%;
+  position: absolute;
+  background: rgba(34, 41, 46, 0.85);
+  z-index: 999;
+}
+/* line 74, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#notice_wrapper p {
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.25rem;
+  padding: 1.5rem 0;
+}
+
+/*=================================*/
+/* BUTTONS                         */
+/*=================================*/
+/* line 88, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  display: inline-block;
+  min-width: 8.5rem;
+}
+
+/* line 100, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.follow_button {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: .5rem .5rem;
+  text-align: center;
+  border-radius: .5rem;
+  outline: none;
+  border: none;
+  display: inline-block;
+  min-width: 8.5rem;
+  background: #DC2031;
+  transition: background .4s ease-in-out;
+}
+/* line 113, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.follow_button:hover {
+  background: #bb1b2a;
+}
+
+/* line 118, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_highlight {
+  background: #DA5A36;
+  transition: background .4s ease-in-out;
+}
+/* line 121, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_highlight:hover {
+  background: #c54824;
+}
+
+/* line 126, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_devise {
+  background: #DC2031;
+  transition: background .4s ease-in-out;
+}
+/* line 129, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_devise:hover {
+  background: #bb1b2a;
+}
+
+/* line 134, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_cherry {
+  background: #950B42;
+  transition: background .4s ease-in-out;
+}
+/* line 137, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_cherry:hover {
+  background: #710832;
+}
+
+/* line 142, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_merchant {
+  background: #C13213;
+  transition: background .4s ease-in-out;
+}
+/* line 145, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_merchant:hover {
+  background: #9e2910;
+}
+
+/* line 150, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_white {
+  background: #FFFFFF;
+  color: #22292e;
+  transition: background .4s ease-in-out;
+}
+/* line 154, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_white:hover {
+  background: #ececec;
+}
+
+/* line 159, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_dark {
+  background: #749730;
+  color: #FFFFFF;
+  transition: background .4s ease-in-out;
+}
+/* line 163, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_dark:hover {
+  background: #5e7a27;
+}
+
+/* line 168, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.button_block {
+  display: block;
+  margin: 0 auto;
+}
+
+/*=================================*/
+/* HEADER                          */
+/*=================================*/
+/* line 177, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#main_header {
+  color: #22292e;
+  background: #FFFFFF;
+  padding: 2.5rem 0;
+}
+/* line 181, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#main_header #logo {
+  float: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #22292e;
+  text-decoration: none;
+}
+/* line 188, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#main_header nav {
+  float: right;
+}
+/* line 190, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#main_header nav ul {
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+}
+/* line 194, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#main_header nav ul li {
+  display: inline;
+  margin-left: 2.5rem;
+}
+/* line 197, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#main_header nav ul li a {
+  color: #22292e;
+  text-decoration: none;
+}
+
+/* line 207, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 4rem;
+  height: 311px;
+}
+/* line 213, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#banner h1 {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 8rem 0;
+}
+
+/* line 224, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.vendors_banner {
+  background-image: url(/assets/nuts-banner-114cbb47d5bb5563ff947c0962f477f3cfa7e7c60385773bed2f445878572978.jpg);
+}
+
+/* line 228, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.sign_in_banner {
+  background-image: url(/assets/kiwi-c911338135d2b4c387419bd7eb7f00fb78a3d5bd9aa259c64a2ac74ac022408b.jpg);
+}
+
+/* line 232, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.sign_up_banner {
+  background-image: url(/assets/cherries-banner-341b364503f092bb21221a376d881ddae0e8874c482fdd4ea2224851fc56716e.jpg);
+}
+
+/* line 236, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.about_banner {
+  background-image: url(/assets/cupcakes-banner-e10e51c26ec44835fd9a95409030d855a693e5ad25ea69f31abff025a5e96d1d.jpg);
+}
+
+/* line 240, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.forgot_password_banner {
+  background-image: url(/assets/beans-banner-441ed4803884e9b5c99bb479297cd487da057c2cb9856bb49d2eafdad951ecad.jpg);
+}
+
+/*=================================*/
+/* FORMS                           */
+/*=================================*/
+/* line 249, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.field {
+  margin: .5rem 0 1.5rem 0;
+}
+
+/* line 253, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+input[type="email"], input[type="text"], input[type="password"], textarea {
+  width: 100%;
+  height: 2.5rem;
+  padding: .25rem 1rem;
+  background: #EDEFF5;
+  border: 1px solid #dde0ec;
+  border-radius: .35rem;
+  margin-top: .5rem;
+}
+
+/* line 263, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+textarea {
+  min-height: 8rem;
+  margin-top: .5rem !important;
+}
+
+/* line 268, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+#form {
+  padding: 0 0 5rem 0;
+}
+
+/*=================================*/
+/* DEVISE                          */
+/*=================================*/
+/* line 275, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.devise-links {
+  text-decoration: none;
+  color: #DC2031;
+}
+
+/*=================================*/
+/* PAGINATION                      */
+/*=================================*/
+/* line 284, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.pagination:before, .pagination:after {
+  content: " ";
+  display: table;
+}
+
+/* line 289, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.pagination:after {
+  clear: both;
+}
+
+/* line 293, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.pagination {
+  text-align: center;
+  margin: 28rem 0 5rem 0;
+}
+/* line 296, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.pagination a, .pagination .previous_page, .pagination .current, .pagination .next_page {
+  padding: 0.75rem 1rem;
+  margin: 0 .25rem;
+  border-radius: .15rem;
+  line-height: 1.25;
+  text-decoration: none;
+  background: #EDEFF5;
+  font-weight: 700;
+  font-size: .7rem;
+  font-style: normal;
+  /*override will paginate italics */
+  color: #22292e;
+}
+/* line 307, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.pagination a:hover, .pagination .previous_page:hover, .pagination .current:hover, .pagination .next_page:hover {
+  background: #22292e;
+  color: white;
+}
+/* line 312, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.pagination .current {
+  background: #22292e;
+  color: #FFFFFF;
+}
+/* line 316, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.pagination .disabled {
+  color: #C0C0C0;
+}
+/* line 318, /Users/krystal/Desktop/Wyncode/Projects/market_finder/app/assets/stylesheets/application.css.scss */
+.pagination .disabled:hover {
+  color: #C0C0C0;
+  background: #EDEFF5;
+}
