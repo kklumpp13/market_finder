@@ -3,12 +3,13 @@
 </div>
 
 
-<div id="vendors" class="cf">
+<div class="vendors" class="cf">
    <div class="wrapper">
+   
 
 <p id="notice"><%= notice %></p>
 
-<div>
+<div class="cf">
 <h2><%= @market.name %><h2>
 </div>
 
@@ -22,7 +23,8 @@
   <%= @market.zip %>
 </p>
 
-<section class='vendors'>
+
+<section class="vendors cf">
   <h4><%= @market.name %>'s Vendors</h4>
     <ul class="cf">
       <% if @market.vendors.empty? %>

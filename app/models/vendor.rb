@@ -4,8 +4,15 @@ class Vendor < ActiveRecord::Base
   belongs_to :user
   acts_as_followable
 
-  has_attached_file :thumbnail, :styles => { :large => "1000x1000#", :medium => "550x550#" }  
+  has_attached_file :thumbnail, :styles => { :large => "1000x1000#", :medium => "550x550#" }
+                                # :storage => :s3,
+                                # :s3_credentials => Proc.new{ |a| a.instance.s3_credentials }
+
   validates_attachment_content_type :thumbnail, :content_type => /\Aimage\/.*\Z/
+
+  # def s3_credentials
+  #   {:bucket => "mfinder", :access_key_id => ENV["AWS_ACCESS_KEY_ID"], :secret_access_key => ENV["AWS_SECRET_ACCESS_KEY"]}
+  # end
 
   extend FriendlyId
   friendly_id :name, use: :slugged

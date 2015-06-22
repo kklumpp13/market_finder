@@ -42,6 +42,7 @@ gem 'will_paginate', '~> 3.0.7'
 gem 'font-awesome-sass'
 gem 'friendly_id', '~> 5.1.0'
 gem "acts_as_follower"
+gem 'aws-sdk', '< 2.0'
 
 
 # Use ActiveModel has_secure_password

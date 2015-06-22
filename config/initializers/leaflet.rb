@@ -1,2 +1,0 @@
-Leaflet.tile_layer = "https://a.tiles.mapbox.com/v4/mjesuele.medcme14/page.html?access_token=pk.eyJ1IjoibWplc3VlbGUiLCJhIjoiYWNlMTk1OTUwMzg4ZjNiODhjZWQwMzY5MWY2NWQwZTUifQ.7g81IuO6O_VQ1RMumb4sRg#3/0.00/0.00"
-Leaflet.attribution = "Thanks for the cool tiles, dude(s)!"
