@@ -79,6 +79,9 @@ $(document).ready(function(){
     markers.clearLayers();
     mkts.forEach(function(mkt) {
       var coords = [mkt["latitude"], mkt["longitude"]];
+      if (coords[0] === null || coords[1] === null) {
+        return;
+      }
       L.marker(coords).addTo(markers);
     });
   }
