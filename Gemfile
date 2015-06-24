@@ -33,8 +33,6 @@ gem 'zip-codes'
 gem "paperclip", "~> 4.2"
 gem 'pickadate-rails'
 
-gem "httparty"
-
 gem 'bourbon'
 gem 'neat', '~> 1.7.2'
 gem "leaflet-rails"
