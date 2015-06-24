@@ -111,7 +111,7 @@ margin: 0 auto;
   background: $devise;
   transition: background .4s ease-in-out;
   &:hover {
-    background: darken($devise, 7.5%); 
+    background: darken($devise, 7.5%);
   }
 }
 
@@ -119,7 +119,7 @@ margin: 0 auto;
   background: $highlight;
   transition: background .4s ease-in-out;
   &:hover {
-    background: darken($highlight, 7.5%); 
+    background: darken($highlight, 7.5%);
   }
 }
 
@@ -127,7 +127,7 @@ margin: 0 auto;
   background: $devise;
   transition: background .4s ease-in-out;
   &:hover {
-    background: darken($devise, 7.5%);  
+    background: darken($devise, 7.5%);
   }
 }
 
@@ -135,7 +135,7 @@ margin: 0 auto;
   background: $cherry;
   transition: background .4s ease-in-out;
   &:hover {
-    background: darken($cherry, 7.5%);  
+    background: darken($cherry, 7.5%);
   }
 }
 
@@ -143,7 +143,7 @@ margin: 0 auto;
   background: $merchant;
   transition: background .4s ease-in-out;
   &:hover {
-    background: darken($merchant, 7.5%); 
+    background: darken($merchant, 7.5%);
   }
 }
 
@@ -321,13 +321,3 @@ textarea {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-

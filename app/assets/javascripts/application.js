@@ -15,10 +15,9 @@
 //= require leaflet
 //= require markets
 //= require bootstrap-sprockets
-//= require pickadate/picker 
-//= require pickadate/picker.date 
-//= require pickadate/picker.time 
+//= require pickadate/picker
+//= require pickadate/picker.date
+//= require pickadate/picker.time
 //= require jquery.turbolinks
 //= require turbolinks
-
 //= require_tree .

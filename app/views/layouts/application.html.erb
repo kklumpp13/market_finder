@@ -2,11 +2,14 @@
 <html>
 <head>
   <title>MarketFinder</title>
-  <link href='//fonts.googleapis.com/css?family=Raleway:500,700,300' rel='stylesheet' type='text/css'>
-  <link href='//fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-  <link href='//api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
-  <script src='//api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:500,700,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <style>#map { height: 550px; }</style>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
@@ -30,7 +33,7 @@
 <% end %>
 
 
-    
+
 <%= render :partial => 'layouts/header' unless controller_name == "welcome" && (action_name == "index" || "vendor_landing" || "customer_landing") %>
 
 <%#= if @user.signed_in? render "layout/header"  %>
@@ -50,9 +53,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
